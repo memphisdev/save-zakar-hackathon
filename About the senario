@@ -67,3 +67,10 @@ An alert from your early warning system indicating the first detection of a fire
     "radius": 5.0
   }
 }
+
+## Possible challenges you may face: ##
+Uneven distributions of sensors (because it may not be possible to place sensors everywhere due to cost or geography)
+An uneven geographic sampling of tweets (because some areas have denser populations than others)
+Unreliable sensor readings (because equipment malfunctions sometimes)
+Sensors going offline due to dead batteries or destruction
+
