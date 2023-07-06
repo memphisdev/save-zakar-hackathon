@@ -6,18 +6,20 @@ Importing materials is expensive and takes time, so they must do everything they
 Similarly, with a relatively small geographic footprint, smoke can quickly pollute the air, causing health problems.
 
 ## How can you help? ##
-Your chance to save Zakar is by building Wildfire Early Warning System!
+Your chance to save Zakar is by building one or more of the following:
 
-Early warning systems can be implemented in several ways.  Some systems use weather forecasts.  Some systems employ satellite imagery.  Others use on-the-ground temperature and gas sensors.  
+a. An early warning system detects temperature reading anomalies and therefore can predict a wildfire before it starts. Building early warning systems can be implemented in several ways.  Some systems use weather forecasts.  Some systems employ satellite imagery.  Others use on-the-ground temperature and gas sensors.  
 Researchers have even explored detecting wildfires from social media activity.
+b. Build a real-time dashboard to display in a human-readable manner the ingested data. 
 
 ## The Scenario ##
 
 The government of Zakar placed temperature sensors across the island. Their citizens are also very active on social media.  
 The government contracted us to develop software to identify fires using temperature readings, social media messages, or both.  
 You will receive temperature readings from multiple sensors, tweets tagged with geographic locations, and (delayed) fire notifications.
-Your goal is to come up with tools for reliably detecting wildfires from these data before the official fire notifications arrive.
+Your goal is to come up with tools for reliably detecting wildfires from these data before the official fire notifications arrive. As mentioned in the previous paragraph.
 
+## The Data 
 You will be able to receive the messages in real time from Memphis.dev station using one of the Memphis.dev client SDKs. 
 Similarly, early warnings will be sent to another Memphis.dev station.  The government has an alerting system in place so that early warnings are sent to the people of Zakar.
 
@@ -68,7 +70,7 @@ An alert from your early warning system indicating the first detection of a fire
   }
 }
 
-## Possible challenges you may face: ##
+## Possible challenges you may face:
 Uneven distributions of sensors (because it may not be possible to place sensors everywhere due to cost or geography)
 An uneven geographic sampling of tweets (because some areas have denser populations than others)
 Unreliable sensor readings (because equipment malfunctions sometimes)
