@@ -1,4 +1,7 @@
-# Save Zakar Island Hackathon #
+
+![GitHub](https://github.com/memphisdev/savezakar/assets/107035359/286d280c-a4d7-43b8-8279-5908842dfa09)
+# Save Zakar Hackathon #
+In collaboration with Streamlit(https://github.com/streamlit/streamlit) & Supabase(https://github.com/supabase)
 We are happy to announce the **#SaveZakar** hackathon in collaboration with Streamlit & Supabase!
 The hackathon will take place from July 31st to August 7th!
 Submit your application here 👉 ////
@@ -6,19 +9,22 @@ Submit your application here 👉 ////
 **To stay updated on the official start of the Hackathon, please join us on our discord channel and Twitter** 
 
 ## Hackathon key details 🔑 ##
-* You have a week to create a wildfire early warning system using Memphis.dev, Streamlit, and Supabase.
+* You have a week to create a wildfire early warning system using Memphis.dev and Streamlit.
 * You can work on your project and time and submit it via ///
 * Submission deadline is Monday, August 7, 2023
 * Winners will be announced on ///
 
 # Prizes 🎁 #
-The prizes will be rewarded in 5 different categories. One winner per category will be announced on August 10th. 
+The prizes will be rewarded in 5 different categories. 
 
 **Main categories**:
 * Most creative and impressive visualization
 * Most informative visualization
 * Most accurate solution
 * Most interesting architecture or algorithm
+
+  # The challenge
+  
 
 # Submission # 
 * Submit your project via one of the team members Dev.to account
