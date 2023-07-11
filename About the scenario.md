@@ -23,7 +23,8 @@ You will be able to receive the messages in real time from Memphis.dev stations 
 Similarly, early warnings will be sent to another Memphis.dev station.
 
 Temperature readings are available from the `zakar-temperature-readings` station and look like so:
- ```json
+
+```json
  {
   "geospatial_x": 4,
   "geospatial_y": 5,
@@ -41,6 +42,7 @@ Micro-blog posts are available from the `zakar-tweets` station and look like so:
   "geospatial_y": 5,
   "text": "Its gettin hot in here (so hot). I am gettin so hot, I wanna take my clothes off"
 }
+```
 
 Notifications of past wildfire events are available from the `zakar-past-fire-alerts` station and look like so:
 ```json
@@ -53,6 +55,7 @@ Notifications of past wildfire events are available from the `zakar-past-fire-al
 ```
 
 You should generate early warning messages in the following format and send them to the `zakar-fire-alerts` station:
+
 ```json
 {
   "event_day": 527,
