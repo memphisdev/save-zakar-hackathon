@@ -29,8 +29,9 @@ Zakar Island has been struggling with wildfires in the last few years, taking hu
 Read more on the data sensors and the scenario here 👉 [About the scenario.md](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
 # Submission # 
-* Submit your project via one of the team members Dev.to account
+* Submit your project via ////
 * Please use this template and **#SaveZakar** to submit your project.
+* If please to be included in the visualization categories, please Make sure to add a Streamlit link to your submission. 
 
   # Rules #
 
@@ -50,10 +51,12 @@ Read more on the data sensors and the scenario here 👉 [About the scenario.md]
   Join our dedicated discord channel 
 
   ### What are the judging criteria? ###
+  The judging criteria are according to....
 
  # Useful links #
- - Memphis.dev documentation
- - #SaveZakar Hackathon Discord
+ - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
+ - #SaveZakarHackathon Discord channel
+ - [Streamlit documentation](https://docs.streamlit.io/)
  - Tutorial Videos
 
 
