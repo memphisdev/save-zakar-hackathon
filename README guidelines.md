@@ -1,7 +1,7 @@
 
 ![GitHub](https://github.com/memphisdev/savezakar/assets/107035359/286d280c-a4d7-43b8-8279-5908842dfa09)
 # Save Zakar Hackathon #
-In collaboration with Streamlit(https://github.com/streamlit/streamlit) & Supabase(https://github.com/supabase)
+In collaboration with [Streamlit](https://github.com/streamlit/streamlit) & [Supabase](https://github.com/supabase)
 We are happy to announce the **#SaveZakar** hackathon in collaboration with Streamlit & Supabase!
 The hackathon will take place from July 31st to August 7th!
 Submit your application here 👉 ////
@@ -26,7 +26,7 @@ The prizes will be rewarded in 5 different categories.
   # The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines. To aid citizens, the government installed temperature sensors. Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread. 
 
-Read more on the data sensors and the scenario here 👉 About the scenario.md 
+Read more on the data sensors and the scenario here 👉 [About the scenario.md](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
 # Submission # 
 * Submit your project via one of the team members Dev.to account
