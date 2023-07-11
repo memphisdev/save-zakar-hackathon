@@ -43,7 +43,7 @@ Micro-blog posts are available from the `zakar-tweets` station and look like so:
 }
 
 Notifications of past wildfire events are available from the `zakar-past-fire-alerts` station and look like so:
- ```json
+```json
 {
   "event_day": 527,
   "notification_day": 530,
