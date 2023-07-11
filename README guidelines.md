@@ -14,7 +14,7 @@ Submit your application here 👉 ////
 * Submission deadline is Monday, August 7, 2023
 * Winners will be announced on ///
 
-# Prizes 🎁 #
+## Prizes 🎁 
 The prizes will be rewarded in 5 different categories. 
 
 **Main categories**:
@@ -23,20 +23,20 @@ The prizes will be rewarded in 5 different categories.
 * Most accurate solution
 * Most interesting architecture or algorithm
 
-  # The challenge
+## The challenge 🔥
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines. To aid citizens, the government installed temperature sensors. Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread. 
 
 Read more on the data sensors and the scenario here 👉 [About the scenario.md](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
-# Submission # 
+## Submission 🏁
 * Submit your project via ////
 * Please use this template and **#SaveZakar** to submit your project.
 * If please to be included in the visualization categories, please Make sure to add a Streamlit link to your submission. 
 
-  # Rules #
+  ## Rules  
 
 
-  # FAQ #
+  ## FAQ ⁉️
   
   ### Where do I sign in? ###
   Applications can be submitted at this link 👉
@@ -53,11 +53,26 @@ Read more on the data sensors and the scenario here 👉 [About the scenario.md]
   ### What are the judging criteria? ###
   The judging criteria are according to....
 
- # Useful links #
+ ## Useful links 🚀
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
  - #SaveZakarHackathon Discord channel
  - [Streamlit documentation](https://docs.streamlit.io/)
  - Tutorial Videos
 
+## Some examples 😎
+Please feel free to approach this problem however you want. We'd love to see your creative solutions!
+If you need help getting started, we came up with several ideas 💡:
 
+Idea #1: A dashboard that visualizes the geographic distributions of the temperature readings, tweets, and fire notifications.
 
+Idea #2: Use a Jupyter Notebook to apply statistical outlier detection techniques to the temperature data.
+
+Idea #3: Train and apply machine learning models for outlier and anomaly detection to the temperature data.
+
+Idea #4: Ingesting the data into Elasticsearch and using its anomaly detection techniques.
+
+Idea #5: Using text embedding models like those from HuggingFace to convert the tweets into vectors and perform clustering or similar to identify outliers.
+
+Idea #6: Create a text classifier for the tweet data to identify fire-related tweets.
+
+# Let's go!!!
