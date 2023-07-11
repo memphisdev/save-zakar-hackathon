@@ -24,7 +24,9 @@ The prizes will be rewarded in 5 different categories.
 * Most interesting architecture or algorithm
 
   # The challenge
-  
+Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines. To aid citizens, the government installed temperature sensors. Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread. 
+
+Read more on the data sensors and the scenario here 👉 About the scenario.md 
 
 # Submission # 
 * Submit your project via one of the team members Dev.to account
