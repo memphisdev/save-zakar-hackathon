@@ -53,7 +53,7 @@ Notifications of past wildfire events are available from the `zakar-past-fire-al
 ```
 
 You should generate early warning messages in the following format and send them to the `zakar-fire-alerts` station:
- ```json
+```json
 {
   "event_day": 527,
   "geospatial_x": 4,
