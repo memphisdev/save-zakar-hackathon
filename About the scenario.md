@@ -76,3 +76,6 @@ An uneven geographic sampling of tweets (because some areas have denser populati
 Unreliable sensor readings (because equipment malfunctions sometimes)
 Sensors going offline due to dead batteries or destruction
 
+## Some examples
+
+
