@@ -24,6 +24,7 @@ You will be able to receive the messages in real time from Memphis.dev station u
 Similarly, early warnings will be sent to another Memphis.dev station.  The government has an alerting system in place so that early warnings are sent to the people of Zakar.
 
 A message from a temperature sensor would look like so:
+ ```json
  {
   "sensor_id": 123,
   "sensor_latitude": 25.6,
@@ -31,9 +32,9 @@ A message from a temperature sensor would look like so:
   "temperature": 80.2,
   "timestamp": 1281237
 }
-
+```
 A message indicating a wildfire event had occurred would look like so:
-
+ ```json
 {
   "event_id": 527,
   "incidence_type": "wildfire",
@@ -46,18 +47,18 @@ A message indicating a wildfire event had occurred would look like so:
     "max_longitude": 76.0
   }
 }
-
+```
 An alert indicating that a fire was put out would look like so:
-
->{
+ ```json
+{
   "alert_id": 527,
   "event_type": "wildfire",
   "state": "resolved",
   "timestamp": 1281237
 }
-
+```
 An alert from your early warning system indicating the first detection of a fire would look like so:
-
+ ```json
 {
   "alert_id": 527,
   "event_type": "wildfire",
@@ -69,13 +70,12 @@ An alert from your early warning system indicating the first detection of a fire
     "radius": 5.0
   }
 }
+```
 
 ## Possible challenges you may face:
 Uneven distributions of sensors (because it may not be possible to place sensors everywhere due to cost or geography)
 An uneven geographic sampling of tweets (because some areas have denser populations than others)
 Unreliable sensor readings (because equipment malfunctions sometimes)
 Sensors going offline due to dead batteries or destruction
-
-## Some examples
 
 
