@@ -45,6 +45,8 @@ The 2nd best project will receive -
 
 <INSERT #2 prizes here>
 
+Original and creative projects will recieve an awesome swag pack by Memphis.dev and Streamlit
+
 ## The challenge 🔥
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
 
