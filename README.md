@@ -1,4 +1,4 @@
-![Thumbnail](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/bbcd6628-bd7a-4647-962d-c0dd0f323dba)
+![Thumbnail](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/3c54ec92-e4ae-4f1b-916b-207a9f6ea598)
 
 # Save Zakar Hackathon #
 In collaboration with [Streamlit](https://github.com/streamlit/streamlit) & [Supabase](https://github.com/supabase),
