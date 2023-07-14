@@ -76,7 +76,7 @@ Sensors going offline due to dead batteries or destruction
 ## Getting started
 ### Initialization
 1. Clone the hackathon repo to your local machine
-2. Create a Memphis.dev account ![here](https://cloud.memphis.dev)
+2. Create a Memphis.dev account [here](https://cloud.memphis.dev)
 3. Run the simulator to start receiving sensors data *instructions*
 4. Create a Memphis.dev consumer that will collect ingested data and pour it into Supabase or any other database of your choice
 
