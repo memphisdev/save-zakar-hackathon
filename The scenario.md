@@ -2,10 +2,10 @@
 
 
 # Save the Island of Zakar! #
-Zakar is a distinct island with diverse ecosystems from dense jungles to mind-blowing coral reefs. 
-Besides the nice and welcoming citizens, Zakar is home to rare and endangered species, and we're on a mission to keep them thriving.
-The island has been struggling with wildfires in the last few years.  As a small island nation, fires are particularly problematic. 
-Importing materials is expensive and takes time, so they must do everything they can to protect their homes, farms, and natural resources.  
+Zakar is a distinct island with diverse ecosystems from dense jungles to mind-blowing coral reefs.<br>
+Besides the nice and welcoming citizens, Zakar is home to rare and endangered species, and we're on a mission to keep them thriving.<br>
+The island has been struggling with wildfires in the last few years.  As a small island nation, fires are particularly problematic.<br>
+Importing materials is expensive and takes time, so they must do everything they can to protect their homes, farms, and natural resources.<br>
 Similarly, with a relatively small geographic footprint, smoke can quickly pollute the air, causing health problems.
 
 ## How can you help? ##
