@@ -1,29 +1,49 @@
 ![GitHub README](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/dc56d45f-8861-49b0-9796-05f33ea8a9d4)
 
 
-# Save Zakar Hackathon #
-In collaboration with [Streamlit](https://github.com/streamlit/streamlit) & [Supabase](https://github.com/supabase),
-we are happy to announce the **#SaveZakar**!
-The hackathon will take place from July 31st to August 7th.
-Submit your application here 👉 ////
+A fictional island nation named Zakar is suffering from wildfires.<br>
+Let's help them build an early warning system and save lives and earth!
 
-**To stay updated on the official start of the Hackathon, please join us on our [Discord channel](https://discord.gg/WZpysvAeTf) or follow us on [Twitter](https://twitter.com/Memphis_Dev)** 
+# Save Zakar Hackathon
+In collaboration with [Streamlit](https://github.com/streamlit/streamlit) & [Supabase](https://github.com/supabase),<br>
+we are happy to announce Memphis #1 hackathon **#SaveZakar**!<br>
 
-## Hackathon key details 🔑 ##
-* You have a week to create a wildfire early warning system using Memphis.dev and Streamlit.
-* You can work on your project on your own time and submit it via when ready. ///
+## The story
+Wildfires wreak havoc every year.<br>
+They take human and animal lives. They destroy agricultural and industrial crops and cause famines.<br>
+They damage the environment, contribute to global warming, and generate smoke that pollutes the air.<br>
+Their overall impact runs into billions of dollars and includes incalculable harm to people and animals.<br>
+<br>
+In this hackathon, you are going to build a wildfire early warning system for the fictional island nation of Zakar.
+
+## Hackathon key information 🔑
+* There are two types of potential submitted projects: early warning system and data visualization
+* You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit
 * The submission deadline is Monday, August 7, 2023
-* Winners will be announced on ///
+* The submission can take place at any time during the week and will be made via Google Form
+* The winners will be announced on August 21, 2023
 
 ## Prizes 🎁 
-The prizes will be rewarded in 5 different categories. 
-
-**Main categories**:
-* Most creative and impressive visualization
+Each project will be judged by the following categories:
+* Creativity
 * Most informative visualization
-* Most accurate solution
+* Most accurate solution (For the early warning system)
 * Most interesting architecture
 * Most interesting algorithm
+
+Besides internal glory, the best project will get the perfect gaming package which includes the following:
+* SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset
+* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
+* *RARE* Framed Nintendo Game Boy Color GBC Disassembled
+* Tons of swag from Memphis.dev and Streamlit!
+
+<INSERT #1 prizes here>
+
+The 2nd best project will receive -  
+* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
+* Tons of swag from Memphis.dev and Streamlit!
+
+<INSERT #2 prizes here>
 
 ## The challenge 🔥
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
