@@ -1,3 +1,6 @@
+![GitHub README](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/608ddd4f-4b71-484f-8d10-ebed3622d13e)
+
+
 # Save the Island of Zakar! #
 Zakar is a distinct island with diverse ecosystems from dense jungles to mind-blowing coral reefs. 
 Besides the nice and welcoming citizens, Zakar is home to rare and endangered species, and we're on a mission to keep them thriving.
@@ -19,7 +22,7 @@ You will receive temperature readings from multiple sensors, tweets tagged with 
 Your goal is to come up with tools for reliably detecting wildfires from these data before the official fire notifications arrive. As mentioned in the previous paragraph.
 
 ## The Data 
-You will be able to receive the messages in real time from Memphis.dev stations using one of the Memphis.dev client SDKs. 
+You will be able to receive the messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs. 
 Similarly, early warnings will be sent to another Memphis.dev station.
 
 Temperature readings are available from the `zakar-temperature-readings` station and look like so:
@@ -69,5 +72,18 @@ Uneven distributions of sensors (because it may not be possible to place sensors
 An uneven geographic sampling of tweets (because some areas have denser populations than others)
 Unreliable sensor readings (because equipment malfunctions sometimes)
 Sensors going offline due to dead batteries or destruction
+
+## Getting started
+### Initialization
+1. Clone the hackathon repo to your local machine
+2. Create a Memphis.dev account ![here](https://cloud.memphis.dev)
+3. Run the simulator to start receiving sensors data *instructions*
+4. Create a Memphis.dev consumer that will collect ingested data and pour it into Supabase or any other database of your choice
+
+### For visualization projects
+*Streamlit instructions*
+
+### For early-warning system (Anomaly detection)
+*some ideas to start with*
 
 
