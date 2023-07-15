@@ -57,6 +57,7 @@ Read more on the data sensors and the scenario here 👉 [About the scenario.md]
 ## Submission 🏁
 * Please make sure to signup at the Hackathon [main page](https://hackathon.memphis.dev)
 * Submit your project via the following [form](#)
+* Make sure to use one of the following permissive licenses for your code: MIT, Apache, BSD-2, BSD-3, or Commons Clause.
 
 ## Rules  
 
