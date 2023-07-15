@@ -55,31 +55,29 @@ Zakar's current fire notification system only sends alerts 3 days after a fire h
 Read more on the data sensors and the scenario here 👉 [About the scenario.md](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
 ## Submission 🏁
-* Submit your project via ////
-* Please use this template and **#SaveZakar** to submit your project.
-* To be included in the visualization categories, please make sure to add a Streamlit link to your submission. 
+* Please make sure to signup at the Hackathon [main page](https://hackathon.memphis.dev)
+* Submit your project via the following [form](#)
 
-  ## Rules  
+## Rules  
 
-
-  ## FAQ ⁉️
+## FAQ ⁉️
   
-  ### Where do I sign in? ###
-  Applications can be submitted at this link 👉
-  
-  ### When can I submit the project? ###
-  Anytime between July 31st to August 7th
-  
-  ### When and where will the winners be announced? ###
-  Winners will be announced on August 10th in a virtual event at ////
+### Where do I sign in?
+Applications can be submitted at this link 👉
 
-  ### Where should I go if I have any questions? ###
-  Join our dedicated [Discord channel](https://discord.gg/WZpysvAeTf).
+### When can I submit the project?
+Anytime between July 31st to August 7th
 
-  ### What are the judging criteria? ###
-  The judging criteria are according to....
+### When and where will the winners be announced?
+Winners will be announced on August 10th in a virtual event at ////
 
- ## Useful links 🚀
+### Where should I go if I have any questions?
+Join our dedicated [Discord channel](https://discord.gg/EJqN69M6RH).
+
+### What are the judging criteria?
+The judging criteria are according to....
+
+## Useful links 🚀
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
  - #SaveZakarHackathon Discord channel
  - [Streamlit documentation](https://docs.streamlit.io/)
