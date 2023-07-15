@@ -94,4 +94,4 @@ If you need help getting started, we came up with several ideas 💡:
 * **Idea #5:** Using text embedding models like those from HuggingFace to convert the tweets into vectors and perform clustering or similar to identify outliers.
 * **Idea #6:** Create a text classifier for the tweet data to identify fire-related tweets.
 
-# Let's go!!!
+<h1>Let's go!!!</h1>
