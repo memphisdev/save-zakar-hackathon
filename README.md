@@ -20,7 +20,7 @@ In this hackathon, you are going to build a wildfire early warning system for th
 * There are two types of potential submitted projects: early warning system and data visualization
 * You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit
 * The submission deadline is Monday, August 7, 2023
-* The submission can take place at any time during the week and will be made via Google Form
+* The submission can take place at any time during the week
 * The winners will be announced on August 21, 2023
 
 ## Prizes 🎁 
@@ -56,7 +56,7 @@ Read more on the data sensors and the scenario here 👉 [About the scenario.md]
 
 ## Submission 🏁
 * Please make sure to signup at the Hackathon [main page](https://hackathon.memphis.dev)
-* Submit your project via the following [form](#)
+* Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98)
 * Make sure to use one of the following permissive licenses for your code: MIT, Apache, BSD-2, BSD-3, or Commons Clause.
 
 ## Rules  
