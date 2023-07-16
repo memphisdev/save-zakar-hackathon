@@ -31,7 +31,7 @@ Each project will be judged by the following categories:
 * Most interesting architecture
 * Most interesting algorithm
 
-Besides internal glory, the best project will get the perfect gaming package which includes the following:
+Besides internal glory, the **best** project will get the perfect gaming package which includes the following:
 * SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset
 * Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
 * *RARE* Framed Nintendo Game Boy Color GBC Disassembled
@@ -39,13 +39,13 @@ Besides internal glory, the best project will get the perfect gaming package whi
 
 <INSERT #1 prizes here>
 
-The 2nd best project will receive -  
+The **2nd** best project will receive -  
 * Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
 * Tons of swag from Memphis.dev and Streamlit!
 
 <INSERT #2 prizes here>
 
-Original and creative projects will recieve an awesome swag pack by Memphis.dev and Streamlit
+The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit
 
 ## The challenge 🔥
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
