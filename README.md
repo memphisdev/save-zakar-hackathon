@@ -52,7 +52,7 @@ Zakar Island has been struggling with wildfires in the last few years, taking hu
 
 Zakar's current fire notification system only sends alerts 3 days after a fire has occurred.  That's not enough time to intervene to prevent a fire froms spreading or evacuate people.  To aid the citizens, the government installed temperature sensors and hired you.  Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
 
-Read more on the data sensors and the scenario here 👉 [About the scenario.md](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
+Read more on the data sensors and the scenario [here](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
 ## Submission 🏁
 * Please make sure to signup at the Hackathon [main page](https://hackathon.memphis.dev)
