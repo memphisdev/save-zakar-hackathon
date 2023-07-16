@@ -45,6 +45,8 @@ The **2nd** best project will receive -
 <INSERT #2 prizes here>
 
 The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit
+![Prizes](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/512d356d-44d5-431b-9618-9ac982cad104)
+
 
 ##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
