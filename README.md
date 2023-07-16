@@ -8,7 +8,7 @@ In collaboration with [Streamlit](https://github.com/streamlit/streamlit) & [Sup
 we are happy to announce Memphis #1 hackathon **#SaveZakar**!<br>
 
 ## The story
-Wildfires wreak havoc every year.
+Wildfires wreak havoc every year.<br>
 They take human and animal lives. They destroy agricultural and industrial crops and cause famines.<br>
 They damage the environment, contribute to global warming, and generate smoke that pollutes the air.<br>
 Their overall impact runs into billions of dollars and includes incalculable harm to people and animals.<br>
