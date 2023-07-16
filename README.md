@@ -15,14 +15,14 @@ Their overall impact runs into billions of dollars and includes incalculable har
 <br>
 In this hackathon, you are going to build a wildfire early warning system for the fictional island nation of Zakar.
 
-## Hackathon key information 🔑
+## 🔑  Hackathon key information 
 * There are two types of potential submitted projects: early warning system and data visualization
 * You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit
 * The submission deadline is Monday, August 7, 2023
 * The submission can take place at any time during the week
 * The winners will be announced on August 21, 2023
 
-## Prizes 🎁 
+## 🎁  Prizes 
 Each project will be judged by the following categories:
 * Creativity
 * Most informative visualization
@@ -46,43 +46,48 @@ The **2nd** best project will receive -
 
 The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit
 
-## The challenge 🔥
+##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
 
 Zakar's current fire notification system only sends alerts 3 days after a fire has occurred.  That's not enough time to intervene to prevent a fire froms spreading or evacuate people.  To aid the citizens, the government installed temperature sensors and hired you.  Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
 
 Read more on the data sensors and the scenario 👉 [here](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
-## Submission 🏁
-* Please make sure to signup at the Hackathon [main page](https://hackathon.memphis.dev)
+## 🏁 Submission 
+* Please make sure to sign up at the Hackathon [main page](https://hackathon.memphis.dev)
 * Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98)
 * Make sure to use one of the following permissive licenses for your code: MIT, Apache, BSD-2, BSD-3, or Commons Clause.
 
 ## FAQ ⁉️
   
 ### Where do I sign in?
-Applications can be submitted at this link 👉
+Applications can be submitted using this [link](https://www.hackathon.memphis.dev/). 
 
 ### When can I submit the project?
-Anytime between July 31st to August 7th
+Anytime between July 31st to August 7th using this [form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform).
 
 ### When and where will the winners be announced?
-Winners will be announced on August 21 in a virtual event
+Winners will be announced on August 21st in a virtual event.
 
 ### Where should I go if I have any questions?
 Join our dedicated [Discord channel](https://discord.gg/EJqN69M6RH).
 
 ### What are the judging criteria?
-The judging criteria are according to....
+The projects will be judged by the following
+* Creativity
+* Visualization
+* Accuracy (For the early warning system)
+* Architecture
+* Algorithm
 
-## Useful links 🚀
+## 🚀 Useful links 
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
  - Memphis.dev Signup
  - #SaveZakarHackathon Discord channel
  - [Streamlit documentation](https://docs.streamlit.io/)
  - Tutorial Videos
 
-## Some examples 😎
+## 😎 Some examples 
 Please feel free to approach this problem however you want. We'd love to see your creative solutions!
 If you need help getting started, we came up with several ideas 💡:
 
