@@ -1,6 +1,5 @@
 ![GitHub README](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/dc56d45f-8861-49b0-9796-05f33ea8a9d4)
 
-
 A fictional island nation named Zakar is suffering from wildfires.<br>
 Let's help them build an early warning system and save lives and earth!
 
@@ -59,8 +58,6 @@ Read more on the data sensors and the scenario 👉 [here](https://github.com/me
 * Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98)
 * Make sure to use one of the following permissive licenses for your code: MIT, Apache, BSD-2, BSD-3, or Commons Clause.
 
-## Rules  
-
 ## FAQ ⁉️
   
 ### Where do I sign in?
@@ -70,7 +67,7 @@ Applications can be submitted at this link 👉
 Anytime between July 31st to August 7th
 
 ### When and where will the winners be announced?
-Winners will be announced on August 10th in a virtual event at ////
+Winners will be announced on August 21 in a virtual event
 
 ### Where should I go if I have any questions?
 Join our dedicated [Discord channel](https://discord.gg/EJqN69M6RH).
@@ -80,6 +77,7 @@ The judging criteria are according to....
 
 ## Useful links 🚀
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
+ - Memphis.dev Signup
  - #SaveZakarHackathon Discord channel
  - [Streamlit documentation](https://docs.streamlit.io/)
  - Tutorial Videos
