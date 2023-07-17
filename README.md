@@ -16,11 +16,11 @@ Their overall impact runs into billions of dollars and includes incalculable har
 In this hackathon, you are going to build a wildfire early warning system for the fictional island nation of Zakar.
 
 ## 🔑  Hackathon key information 
-* There are two types of potential submitted projects: early warning system and data visualization
-* You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit
-* The submission deadline is Monday, August 7, 2023
-* The submission can take place at any time during the week
-* The winners will be announced on August 21, 2023
+* There are two types of potential submitted projects: early warning system and data visualization.
+* You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit.
+* The submission deadline is Monday, August 7, 2023.
+* The submission can take place at any time during the week.
+* The winners will be announced on August 21, 2023.
 
 ##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
@@ -122,13 +122,13 @@ Each project will be judged by the following categories:
 * Most interesting algorithm
 
 Besides internal glory, the **best** project will get the perfect gaming package which includes the following:
-* SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset
-* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
-* *RARE* Framed Nintendo Game Boy Color GBC Disassembled
+* SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset.
+* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition.
+* *RARE* Framed Nintendo Game Boy Color GBC Disassembled.
 * Tons of swag from Memphis.dev and Streamlit!
 
 The **2nd** best project will receive -  
-* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
+* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition.
 * Tons of swag from Memphis.dev and Streamlit!
 
 The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit
@@ -140,7 +140,7 @@ The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and S
 You can sign up on the main hackathon [page](https://www.hackathon.memphis.dev/). 
 
 ### When can I submit the project?
-Anytime between July 31st to August 7th using this [form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform).
+Anytime between July 31st to August 7th using this [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ### When and where will the winners be announced?
 Winners will be announced on August 21st in a virtual event.
@@ -162,5 +162,7 @@ The projects will be judged by the following
  - #SaveZakarHackathon Discord channel
  - [Streamlit documentation](https://docs.streamlit.io/)
  - Tutorial Videos
+ - [Application form](https://www.hackathon.memphis.dev/) 
+ - [Submission form](https://forms.gle/Hkmk1aLv9FvrZox98)
 
 <h1>Let's go!!!</h1>
