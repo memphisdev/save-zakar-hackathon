@@ -16,11 +16,11 @@ Their overall impact runs into billions of dollars and includes incalculable har
 In this hackathon, you are going to build a wildfire early warning system for the fictional island nation of Zakar.
 
 ## 🔑  Hackathon key information 
-* There are two types of potential submitted projects: early warning system and data visualization
-* You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit
-* The submission deadline is Monday, August 7, 2023
-* The submission can take place at any time during the week
-* The winners will be announced on August 21, 2023
+* There are two types of potential submitted projects: early warning system and data visualization.
+* You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit.
+* The submission deadline is Monday, August 7, 2023.
+* The submission can take place at any time during the week.
+* The winners will be announced on August 21, 2023.
 
 ## 🎁  Prizes 
 Each project will be judged by the following categories:
@@ -31,33 +31,33 @@ Each project will be judged by the following categories:
 * Most interesting algorithm
 
 Besides internal glory, the **best** project will get the perfect gaming package which includes the following:
-* SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset
-* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
-* *RARE* Framed Nintendo Game Boy Color GBC Disassembled
+* SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset.
+* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition.
+* *RARE* Framed Nintendo Game Boy Color GBC Disassembled.
 * Tons of swag from Memphis.dev and Streamlit!
 
 <INSERT #1 prizes here>
 
 The **2nd** best project will receive -  
-* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition
+* Logitech G Pro Wireless Gaming Mouse - League of Legends Edition.
 * Tons of swag from Memphis.dev and Streamlit!
 
 <INSERT #2 prizes here>
 
-The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit
+The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit.
 ![Prizes](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/512d356d-44d5-431b-9618-9ac982cad104)
 
 
 ##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
 
-Zakar's current fire notification system only sends alerts 3 days after a fire has occurred.  That's not enough time to intervene to prevent a fire froms spreading or evacuate people.  To aid the citizens, the government installed temperature sensors and hired you.  Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
+Zakar's current fire notification system only sends alerts 3 days after a fire has occurred.  That's not enough time to intervene to prevent a fire froms spreading or evacuate people. To aid the citizens, the government installed temperature sensors and hired you. Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
 
 Read more on the data sensors and the scenario 👉 [here](https://github.com/memphisdev/savezakar/blob/main/About%20the%20scenario.md) 
 
 ## 🏁 Submission 
-* Please make sure to sign up at the Hackathon [main page](https://hackathon.memphis.dev)
-* Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98)
+* Please make sure to sign up at the Hackathon [main page](https://hackathon.memphis.dev).
+* Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 * Make sure to use one of the following permissive licenses for your code: MIT, Apache, BSD-2, BSD-3, or Commons Clause.
 
 ## FAQ ⁉️
@@ -66,7 +66,7 @@ Read more on the data sensors and the scenario 👉 [here](https://github.com/me
 Applications can be submitted using this [link](https://www.hackathon.memphis.dev/). 
 
 ### When can I submit the project?
-Anytime between July 31st to August 7th using this [form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform).
+Anytime between July 31st to August 7th using this [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ### When and where will the winners be announced?
 Winners will be announced on August 21st in a virtual event.
@@ -84,10 +84,12 @@ The projects will be judged by the following
 
 ## 🚀 Useful links 
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
- - Memphis.dev Signup
- - #SaveZakarHackathon Discord channel
+ - [Memphis.dev Cloud Signup](https://cloud.memphis.dev/) 
+ - #SaveZakarHackathon [Discord channel](https://discord.gg/q37A5ZF4yH)
  - [Streamlit documentation](https://docs.streamlit.io/)
  - Tutorial Videos
+ - [Application form](https://www.hackathon.memphis.dev/) 
+ - [Submission form](https://forms.gle/Hkmk1aLv9FvrZox98)
 
 ## 😎 Some examples 
 Please feel free to approach this problem however you want. We'd love to see your creative solutions!
