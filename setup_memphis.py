@@ -8,7 +8,6 @@ import zipfile
 from tqdm import tqdm
 
 from memphis import Memphis, Headers, MemphisError, MemphisConnectError, MemphisHeaderError, MemphisSchemaError
-from memphis.types import Storage
 
 STATIONS = {
     "tweets" : "zakar-tweets",
@@ -23,8 +22,6 @@ FLNAMES = {
 }
 
 RETENTION_SEC = 2 * 7 * 24 * 60 * 60 # two weeks
-REPLICAS = 1
-
 
 DATA_URL="https://memphis-public-files.s3.eu-central-1.amazonaws.com/wildfire-simulated-data/simulated-training-data.zip"
 
@@ -50,7 +47,7 @@ async def main(host, username, password, account_id):
                 station = STATIONS[data_type]
 
                 print("Creating station {}".format(station))
-                await memphis.station(station, retention_value=RETENTION_SEC, replicas=REPLICAS, storage_type=Storage.MEMORY)
+                await memphis.station(station, retention_value=RETENTION_SEC)
                 print()
 
                 print("Extracting data")
@@ -60,7 +57,7 @@ async def main(host, username, password, account_id):
                 messages = line_reader(zipfl, flname)
                 producer = await memphis.producer(station_name=station, producer_name="data-uploader")
                 for msg in tqdm(messages):
-                    await producer.produce(bytearray(msg, "utf-8"))
+                    await producer.produce(bytearray(msg, "utf-8"), async_produce=True)
                 print()
 
         print("Destroying producer.")
