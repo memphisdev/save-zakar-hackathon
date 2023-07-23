@@ -1,62 +1,53 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+name: Submission
+description: Save Zakar Hackathon Submission
+title: " Save Zakar Hackathon Submission "
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: Project type 
     attributes:
-      label: Contact Details
+      label: What kind of project path do you submit?
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      placeholder: Early-warning system (Anomly Detection)/ Visualization / Both
+    validations:
+      required: true
+  - type: textarea
+    id: Project description
+    attributes:
+      label: Project description
+      description: Tell us what you build
+    validations:
+      required: true
+  - type: input
+    id: Streanlit link
+    attributes:
+      label: For visualization-type projects
+      description: Insert Streamlit project URL
+    validations:
+      required: false
+  - type: input
+    id: source code
+    attributes:
+      label: Link to source code
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: Instructions
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Instructions for the reviewers
+      description: Add instructions for running your project here. The judges will use these to run your project.
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: Background
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: What made you decide to build this particular app?
+      description: What inspired you?
+    validations:
+      required: false
+  - type: textarea
+    id: other information
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Any other information
+    validations:
+      required: false
+  - To keep your sensitive data private please heat to this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.
