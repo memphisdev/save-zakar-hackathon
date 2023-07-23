@@ -80,10 +80,12 @@ Sensors going offline due to dead batteries or destruction
 3. Run the simulator to start receiving sensors data *instructions*
 4. Create a Memphis.dev consumer that will collect ingested data and pour it into Supabase or any other database of your choice
 
-### For visualization projects
-*Streamlit instructions*
-
 ### For early-warning system (Anomaly detection)
-*some ideas to start with*
+![Anomaly Detection Path](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/aa9f2438-bf97-437c-b2ff-6764eebf8577)
+
+### For visualization projects
+![Data Visualization Path](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/1c38a786-0f84-4b7e-acc4-cba6417fe2f1)
+
+
 
 
