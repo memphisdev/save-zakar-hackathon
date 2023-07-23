@@ -114,6 +114,8 @@ If you need help getting started, we came up with several ideas 💡:
 1. Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ## 🎁  Prizes 
+![Prizes 12](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/44d04508-cf0b-44dc-a6cc-35cc6cabedc8)
+
 Each project will be judged by the following categories:
 * Creativity
 * Most informative visualization
@@ -159,9 +161,8 @@ The projects will be judged by the following
 ## 🚀 Useful links 
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
  - [Memphis.dev Cloud Signup](https://cloud.memphis.dev)
- - #SaveZakarHackathon Discord channel
+ - #SaveZakarHackathon [Discord channel](https://discord.gg/q37A5ZF4yH)
  - [Streamlit documentation](https://docs.streamlit.io/)
- - Tutorial Videos
  - [Application form](https://www.hackathon.memphis.dev/) 
  - [Submission form](https://forms.gle/Hkmk1aLv9FvrZox98)
 
