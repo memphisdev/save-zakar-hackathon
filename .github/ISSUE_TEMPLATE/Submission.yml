@@ -39,7 +39,7 @@ body:
     attributes:
       label: What made you decide to build this particular app?
       description: Tell us What inspired you. 
-        validations:
+    validations:
       required: false
   - type: textarea
     attributes:
