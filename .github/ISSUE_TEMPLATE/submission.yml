@@ -2,7 +2,7 @@ name: 🚀 Submission
 description: Submit your project 💡
 body:
  - type: input
-    id: Project type 
+   id: Project type 
     attributes:
       label: What kind of project path do you submit?
       placeholder: Early-warning system (Anomaly Detection)/ Visualization / Both
