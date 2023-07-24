@@ -33,7 +33,7 @@ body:
     attributes:
       label: Instructions for the reviewers
       description: Add instructions for running your project here. The judges will use these to run your project.
-        validations:
+    validations:
       required: false
   - type: textarea
     attributes:
