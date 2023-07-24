@@ -23,11 +23,11 @@ body:
    validations:
      required: false
  - type: input
-    id: source code
-    attributes:
-      label: Link to source code
-    validations:
-      required: false
+   id: source code
+   attributes:
+     label: Link to source code
+   validations:
+     required: false
  - type: textarea
    id: Instructions
    attributes:
