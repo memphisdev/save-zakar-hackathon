@@ -45,6 +45,6 @@ body:
     attributes:
       label: Other information
       description: Add any other information 
-        validations:
+    validations:
       required: false
   - To keep your sensitive data private please heat to this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.
