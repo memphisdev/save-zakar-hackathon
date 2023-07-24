@@ -1,41 +1,52 @@
 name: 🚀 Submission
-description: Suggest an idea for Memphis 💡
-title: "Feature: "
-labels: [💟 Community involvement,Feature Request]
-assignees: [idanasulinmemphis, yanivbh1, avrhamNeeman]
+description: Submit your project 💡
 body:
-  - type: markdown
+ - type: input
+    id: Project type 
     attributes:
-      value: |
-        Thanks for taking the time to fill out this feature request!
+      label: What kind of project path do you submit?
+      placeholder: Early-warning system (Anomaly Detection)/ Visualization / Both
+    validations:
+      required: true
   - type: textarea
+    id: Project description
     attributes:
-      label: Current behavior
-      description: Is your feature request related to a problem? Please describe.
+      label: Project description
+      description: Tell us what you build
+    validations:
+      required: true
+  - type: input
+    id: Streanlit link
+    attributes:
+      label: For visualization-type projects
+      description: Insert Streamlit project URL
+    validations:
+      required: false
+  - type: input
+    id: source code
+    attributes:
+      label: Link to source code
     validations:
       required: false
   - type: textarea
+    id: Instructions
     attributes:
-      label: Suggested solution
-      description: Describe the solution you'd like.
-  - type: input
-    id: context
+      label: Instructions for the reviewers
+      description: Add instructions for running your project here. The judges will use these to run your project.
+    validations:
+      required: true
+  - type: textarea
+    id: Background
     attributes:
-      label: Additional context
-      description: Add any other context about the problem or helpful links here.
-  - type: checkboxes
-    id: terms
+      label: What made you decide to build this particular app?
+      description: What inspired you?
+    validations:
+      required: false
+  - type: textarea
+    id: other information
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/memphisdev/memphis/blob/master/CODE_OF_CONDUCT.md)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
-  - type: checkboxes
-    id: contribution
-    attributes:
-      label: Contributing Docs
-      description: If you plan on contributing code please read - [Contribution Guide](https://docs.memphis.dev/memphis-new/getting-started/how-to-contribute)
-      options:
-        - label: I agree to follow this project's Contribution Docs
-          required: false
+      label: Any other information
+    validations:
+      required: false
+  - To keep your sensitive data private please heat to this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.
+
