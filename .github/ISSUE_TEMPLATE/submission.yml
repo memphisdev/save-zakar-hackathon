@@ -22,6 +22,8 @@ body:
           required: false
         - label: Visualization
           required: false
+        - label: Both
+          required: false
     validations:
       required: true
   - type: textarea
