@@ -1,0 +1,71 @@
+name: 🚀 Save Zakar Hackathon Submission
+description: Submit your project
+title: "Project Submission"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You are one step further to save the world!
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description:  Enter your project's name.
+    validations:
+      required: true
+  - type: checkboxes
+    label: project-type
+    attributes:
+      label: Project Type
+      options:
+        - label: early-warning system (Anomaly Detection)
+          required: false
+        - label: Visualization
+          required: false
+    validations:
+      required: true
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Tell us what you built
+    validations:
+      required: true
+  - type: input
+    id: streamlit-link
+    attributes:
+      label: Streamlit link
+      description:  For visualization-type projects only.
+    validations:
+      required: false
+  - type: input
+    id: source-link
+    attributes:
+      label: Source code link
+    validations:
+      required: false
+  - type: textarea
+    id: instructions
+    attributes:
+      label: Instructions for the reviewers
+      description: Add instructions for running your project here. The judges will use these to run your project.
+      validations:
+        required: false
+  - type: textarea
+    id: motivation
+    attributes:
+      label: What made you decide to build this particular app?
+      description: Tell us what inspired you. 
+      validations:
+        required: false
+  - type: textarea
+    id: other
+    attributes:
+      label: Other information
+      description: Add any other information that you would like the judges to know.
+      validations:
+        required: false
+  - type: markdown
+    attributes:
+      value: |
+        To keep your sensitive data private please head to this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.
