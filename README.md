@@ -36,8 +36,8 @@ To get started with the hackathon, follow these steps:
 1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.  When you create the account, you'll be asked to create a
    station and user.  Give the station whatever name you would like -- you won't use it.  You will use the user you created, though,
    so make sure to save that.
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository on GitHub.
-1. Clone your forked repository from GitHub.
+1. Use this repo as a template to create a new repository.
+1. Clone your repository from GitHub.
 1. Run the hackathon setup script.  Three stations (`zakar-tweets`, `zakar-temperature-readings`, and `zakar-fire-alerts`) will
    be created and populated with data.
    ```bash

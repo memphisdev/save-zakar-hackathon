@@ -1,3 +1,7 @@
+"""
+This example consumers messages from Memphis and prints them to the console.
+"""
+
 import argparse
 import asyncio
 import json
@@ -5,15 +9,15 @@ import os
 
 from memphis import Memphis, MemphisError, MemphisConnectError, MemphisHeaderError
         
-async def main(host, username, password, account_id):        
+async def main(host, username, password, account_id):
     try:
         memphis = Memphis()
         await memphis.connect(host=host,
                               username=username,
                               password=password,
-                              account_id = account_id)
+                              account_id=account_id)
         
-        consumer = await memphis.consumer(station_name="zakar-tweets", consumer_name="example-consumer")
+        consumer = await memphis.consumer(station_name="zakar-tweets", consumer_name="printing-consumer")
 
         while True:
             batch = await consumer.fetch()
@@ -25,7 +29,7 @@ async def main(host, username, password, account_id):
 
     except (MemphisError, MemphisConnectError) as e:
         print(e)
-        
+
     finally:
         await memphis.close()
 
