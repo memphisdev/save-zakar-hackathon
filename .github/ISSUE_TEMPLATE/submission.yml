@@ -14,7 +14,7 @@ body:
     validations:
       required: true
   - type: checkboxes
-    label: project-type
+    id: project-type
     attributes:
       label: Project Type
       options:
@@ -49,22 +49,22 @@ body:
     attributes:
       label: Instructions for the reviewers
       description: Add instructions for running your project here. The judges will use these to run your project.
-      validations:
-        required: false
+    validations:
+      required: false
   - type: textarea
     id: motivation
     attributes:
       label: What made you decide to build this particular app?
       description: Tell us what inspired you. 
-      validations:
-        required: false
+    validations:
+      required: false
   - type: textarea
     id: other
     attributes:
       label: Other information
       description: Add any other information that you would like the judges to know.
-      validations:
-        required: false
+    validations:
+      required: false
   - type: markdown
     attributes:
       value: |
