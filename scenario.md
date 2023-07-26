@@ -81,10 +81,12 @@ Sensors going offline due to dead batteries or destruction
 4. Create a Memphis.dev consumer that will collect ingested data and pour it into Supabase or any other database of your choice
 
 ### For early-warning system (Anomaly detection)
-![Anomaly Detection Path](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/aa9f2438-bf97-437c-b2ff-6764eebf8577)
+![Group 1000002296](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/e6b6f387-554e-4561-a539-271987fcd150)
+
 
 ### For visualization projects
-![Data Visualization Path](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/1c38a786-0f84-4b7e-acc4-cba6417fe2f1)
+![Data Visualization Path (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/c167f35f-657e-43f3-9d74-dcc999e9505e)
+
 
 
 
