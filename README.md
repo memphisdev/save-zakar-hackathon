@@ -137,7 +137,7 @@ The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and S
 You can sign up on the main hackathon [page](https://www.hackathon.memphis.dev/). 
 
 ### When can I submit the project?
-Anytime between July 31st to August 7th opening an issue in the save-zakar-hackathon repo and using this [form](https://forms.gle/Hkmk1aLv9FvrZox98).
+Anytime between July 31st to August 7th opening an issue in this repo and using this [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ### When and where will the winners be announced?
 Winners will be announced on August 21st in a virtual event.
