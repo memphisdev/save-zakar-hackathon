@@ -25,19 +25,18 @@ In this hackathon, you are going to build a wildfire early warning system for th
 ##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
 
-Zakar's current fire notification system only sends alerts 3 days after a fire has occurred.  That's not enough time to intervene to prevent a fire froms spreading or evacuate people.  To aid the citizens, the government installed temperature sensors and hired you.  Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
+Zakar's current fire notification system only sends alerts 3 days after a fire has occurred. That's not enough time to intervene to prevent a fire froms spreading or evacuate people.  To aid the citizens, the government installed temperature sensors and hired you.<br> Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
 
-Read more on the data sensors and the scenario 👉 [here](https://github.com/memphisdev/savezakar/blob/main/scenario.md) 
+Read more on the data that you will work with and the scenario 👉 [here](https://github.com/memphisdev/savezakar/blob/main/scenario.md) 
 
 ## Getting Started - Step 1 - Setting up the environment
 To get started with the hackathon, follow these steps:
 
 1. Sign up at the hackathon [main page](https://hackathon.memphis.dev)
-1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.  When you create the account, you'll be asked to create a
-   station and user.  Give the station whatever name you would like -- you won't use it.  You will use the user you created, though,
-   so make sure to save that.
-1. Use this repo as a template to create a new repository.
-1. Clone your repository from GitHub.
+1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> After account creation head to the users page and create a new client-type user.<br> Make sure to save the credentials, you will need them in step 5. <img width="718" alt="Screenshot 2023-07-27 at 18 06 53" src="https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/fc79a94c-8206-4bbc-bb31-360a83d83884">
+
+1. Fork this repo.
+1. Clone your forked repository from GitHub.
 1. Run the hackathon setup script.  Three stations (`zakar-tweets`, `zakar-temperature-readings`, and `zakar-fire-alerts`) will
    be created and populated with data.
    ```bash
@@ -46,7 +45,6 @@ To get started with the hackathon, follow these steps:
    $ pip install -r requirements.txt
    $ python3 setup_memphis.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
    ```
-
 For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started---part-2---choose-a-path).
 
 ## The Data
