@@ -33,7 +33,9 @@ Read more on the data that you will work with and the scenario 👉 [here](https
 To get started with the hackathon, follow these steps:
 
 1. Sign up at the hackathon [main page](https://hackathon.memphis.dev)
-1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> After account creation head to the users page and create a new client-type user.<br> Make sure to save the credentials, you will need them in step 5. <img width="718" alt="Screenshot 2023-07-27 at 18 06 53" src="https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/fc79a94c-8206-4bbc-bb31-360a83d83884">
+1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> After account creation head to the users page and create a new client-type user.<br> Make sure to save the credentials, you will need them in step 5.
+![Group 1000002297 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/974fc81a-36f5-4566-9c2f-45abe564112d)
+
 
 1. Fork this repo.
 1. Clone your forked repository from GitHub.
