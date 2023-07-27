@@ -109,9 +109,9 @@ If you need help getting started, we came up with several ideas 💡:
     "geospatial_y": 5
   }
   ```
-1. Edit the included `instructions.md` Markdown file to add instructions for running your project for the judges.
-1. Create a pull request against the original repository with your project.
-1. Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
+1. To submit your project please open an issue in the save-zakar-hackathon repository and follow the instructions 
+2. Create a pull request against the original repository with your project.
+3. Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ## 🎁  Prizes 
 ![Prizes 12](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/44d04508-cf0b-44dc-a6cc-35cc6cabedc8)
