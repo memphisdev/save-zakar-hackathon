@@ -47,7 +47,7 @@ To get started with the hackathon, follow these steps:
    $ python3 setup_memphis.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
    ```
 
-For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started).
+For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started---part-2---choose-a-path).
 
 ## The Data
 You will be access messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.
