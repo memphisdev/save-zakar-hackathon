@@ -29,7 +29,7 @@ Zakar's current fire notification system only sends alerts 3 days after a fire h
 
 Read more on the data sensors and the scenario 👉 [here](https://github.com/memphisdev/savezakar/blob/main/scenario.md) 
 
-## Getting Started
+## Getting Started - Step 1 - Setting up the environment
 To get started with the hackathon, follow these steps:
 
 1. Sign up at the hackathon [main page](https://hackathon.memphis.dev)
@@ -46,11 +46,8 @@ To get started with the hackathon, follow these steps:
    $ pip install -r requirements.txt
    $ python3 setup_memphis.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
    ```
-1. Run the example consumer:
-   ```
-   $ python example_consumer.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
-   ```
-1. Get to hacking!
+
+For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started).
 
 ## The Data
 You will be access messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.
