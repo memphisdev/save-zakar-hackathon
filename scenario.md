@@ -73,21 +73,26 @@ An uneven geographic sampling of tweets (because some areas have denser populati
 Unreliable sensor readings (because equipment malfunctions sometimes)
 Sensors going offline due to dead batteries or destruction
 
-## Getting started
-### Initialization
-1. Clone the hackathon repo to your local machine
-2. Create a Memphis.dev account [here](https://cloud.memphis.dev)
-3. Run the simulator to start receiving sensors data *instructions*
-4. Create a Memphis.dev consumer that will collect ingested data and pour it into Supabase or any other database of your choice
-
-### For early-warning system (Anomaly detection)
+## Getting started - Part 2 - Choose a path
+### 1. Build an early-warning system (Anomaly detection)
 ![Group 1000002296 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/b6c40f6f-5530-4a37-b3cb-e0e31d6aae95)
 
+To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer`.
+For your convenience, we provided a consumer code example within this repo called `consumer_example.py` + `mongodb_example.py`
+```
+$ python example_consumer.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
+```
 
-
-### For visualization projects
+### 2. Visualize the data
 ![Data Visualization Path (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/c167f35f-657e-43f3-9d74-dcc999e9505e)
 
+To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer` and store it in a [Streamlit-supported database](https://docs.streamlit.io/knowledge-base/tutorials/databases) (For example, Supabase) for further visualization through Streamlit.
+Please pay attention that for the visualization path, it is mandatory to use Streamlit (Community cloud).
+
+For your convenience, we provided a consumer code example within this repo called `consumer_example.py` + `mongodb_example.py`
+```
+$ python example_consumer.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
+```
 
 
 
