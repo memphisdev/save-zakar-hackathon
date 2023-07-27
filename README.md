@@ -44,7 +44,7 @@ To get started with the hackathon, follow these steps:
    $ python3 -m venv venv
    $ source venv/bin/activate
    $ pip install -r requirements.txt
-   $ python3 setup_hackathon.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
+   $ python3 setup_memphis.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
    ```
 1. Run the example consumer:
    ```
