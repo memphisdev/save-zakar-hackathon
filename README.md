@@ -100,7 +100,7 @@ If you need help getting started, we came up with several ideas 💡:
 
 ## 🏁 Submission
 1. Ensure your project is licensed under one of the following: MIT, Apache Software License v2, BSD-2, BSD-3, or Creative Commons.
-1. If you are creating an early warning system, have your system generate messages of the following form and send them to a station
+2. If you are creating an early warning system, have your system generate messages of the following form and send them to a station
   named `zakar-fire-predictions`:
   ```json
   {
@@ -109,9 +109,9 @@ If you need help getting started, we came up with several ideas 💡:
     "geospatial_y": 5
   }
   ```
-1. To submit your project please open an issue in the save-zakar-hackathon repository and follow the instructions 
-2. Create a pull request against the original repository with your project.
-3. Submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
+3. To submit your project please open an issue in the save-zakar-hackathon repository and follow the instructions. 
+4. Create a pull request against the original repository with your project.
+5. Finally submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ## 🎁  Prizes 
 ![Prizes 12](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/44d04508-cf0b-44dc-a6cc-35cc6cabedc8)
