@@ -128,7 +128,7 @@ The **2nd** best project will receive -
 * Logitech G Pro Wireless Gaming Mouse - League of Legends Edition.
 * Tons of swag from Memphis.dev and Streamlit!
 
-The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit
+The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit.<br>
 ![Prizes](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/512d356d-44d5-431b-9618-9ac982cad104)
 
 ## FAQ ⁉️
