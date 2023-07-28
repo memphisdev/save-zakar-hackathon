@@ -68,7 +68,11 @@ body:
       description: Add any other information that you would like the judges to know.
     validations:
       required: false
-  - type: markdown
+  - type: checkboxes
+    id: google-form
     attributes:
-      value: |
-        **To keep your sensitive data private, please head to this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.**
+      label: **To keep your sensitive data private, please fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.**
+      options:
+        - label: Completed
+    validations:
+      required: true
