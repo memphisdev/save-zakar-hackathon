@@ -71,7 +71,8 @@ body:
   - type: checkboxes
     id: google-form
     attributes:
-      label: **To keep your sensitive data private, please fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.**
+      label: "Confirm submission of private form"
+      description: **To keep your sensitive data private, please fill out this [Google form](https://docs.google.com/forms/d/e/1FAIpQLSecz9jV_bhVaC4zodhbD7QFqQYo_V9B8w9skJlLHOhI6WrWlw/viewform) to complete the submission.**
       options:
         - label: Completed
     validations:
