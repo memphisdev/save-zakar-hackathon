@@ -11,7 +11,7 @@ Similarly, with a relatively small geographic footprint, smoke can quickly pollu
 ## How can you help? ##
 Your chance to save Zakar is by building one or more of the following:
 
-* A ML-powered early warning system that detects temperature or social media anomalies to generate early alerts before a wildfire spreads.
+* An ML-powered early warning system that detects temperature or social media anomalies to generate early alerts before a wildfire spreads.
 * Build a real-time dashboard to visualize the temperature or tweet data in a human-readable manner.
 
 ## The Scenario ##
