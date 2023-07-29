@@ -19,21 +19,23 @@ In this hackathon, you are going to build a wildfire early warning system for th
 * There are two types of potential submitted projects: early warning system and data visualization.
 * You have a week to create one or more of the above projects using a prebuilt sensor system and data, Memphis.dev, and Streamlit.
 * The submission deadline is Monday, August 7, 2023.
-* The submission can take place at any time during the week.
+* The submission can take place at any time during this week.
 * The winners will be announced on August 21, 2023.
 
 ##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
 
-Zakar's current fire notification system only sends alerts 3 days after a fire has occurred. That's not enough time to intervene to prevent a fire froms spreading or evacuate people.  To aid the citizens, the government installed temperature sensors and hired you.<br> Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
+Zakar's current fire notification system only sends alerts 3 days after a fire has occurred. That's not enough time to intervene to prevent a fire froms spreading or evacuate people. To aid the citizens, the government installed temperature sensors and hired you.<br> 
+## Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.
 
-Read more on the data that you will work with and the scenario 👉 [here](https://github.com/memphisdev/savezakar/blob/main/scenario.md) 
+Read more on the data that you will work with and the scenario [here](https://github.com/memphisdev/savezakar/blob/main/scenario.md) 👈
 
 ## Getting Started - Step 1 - Setting up the environment
 To get started with the hackathon, follow these steps:
 
-1. Sign up at the hackathon [main page](https://hackathon.memphis.dev)
-1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> After account creation head to the users page and create a new client-type user.<br> Make sure to save the credentials, you will need them in step 5.
+1. Sign up at the hackathon [main page](https://hackathon.memphis.dev). 
+1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> * After account creation head to the users page and create a new client-type user.<br> * Make sure to save the credentials, you will need them in step 5.
+   
 ![Group 1000002297 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/974fc81a-36f5-4566-9c2f-45abe564112d)
 
 
@@ -50,7 +52,7 @@ To get started with the hackathon, follow these steps:
 For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started---part-2---choose-a-path).
 
 ## The Data
-You will be access messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.
+You will be access to messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.
 
 Temperature readings are available from the `zakar-temperature-readings` station and look like so:
 
@@ -106,7 +108,7 @@ If you need help getting started, we came up with several ideas 💡:
     "geospatial_y": 5
   }
   ```
-3. To submit your project please open an issue in the save-zakar-hackathon repository and follow the instructions. 
+3. To submit your project please open an issue in this repo and follow the instructions. 
 4. Create a pull request against the original repository with your project.
 5. Finally submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
@@ -114,11 +116,11 @@ If you need help getting started, we came up with several ideas 💡:
 ![Prizes 12](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/44d04508-cf0b-44dc-a6cc-35cc6cabedc8)
 
 Each project will be judged by the following categories:
-* Creativity
-* Most informative visualization
-* Most accurate solution (For the early warning system)
-* Most interesting architecture
-* Most interesting algorithm
+* Creativity.
+* Most informative visualization.
+* Most accurate solution (For the early warning system).
+* Most interesting architecture.
+* Most interesting algorithm.
 
 Besides internal glory, the **best** project will get the perfect gaming package which includes the following:
 * SteelSeries Arctis Nova Pro Wireless Multi-System Gaming Headset.
@@ -130,7 +132,8 @@ The **2nd** best project will receive -
 * Logitech G Pro Wireless Gaming Mouse - League of Legends Edition.
 * Tons of swag from Memphis.dev and Streamlit!
 
-The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit.<br>
+The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit.🌟<br>
+
 ![Prizes](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/512d356d-44d5-431b-9618-9ac982cad104)
 
 ## FAQ ⁉️
@@ -145,7 +148,7 @@ Anytime between July 31st to August 7th opening an issue in this repo and using 
 Winners will be announced on August 21st in a virtual event.
 
 ### Where should I go if I have any questions?
-Join our dedicated [Discord channel](https://discord.gg/EJqN69M6RH).
+Join our dedicated [Discord channel](https://discord.gg/EJqN69M6RH).<br> And follow us on [Twitter](https://twitter.com/Memphis_Dev) for more updates. 
 
 ### What are the judging criteria?
 The projects will be judged by the following
