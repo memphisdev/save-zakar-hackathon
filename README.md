@@ -54,7 +54,7 @@ To get started with the hackathon, follow these steps:
 For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started---part-2---choose-a-path).
 
 ## The Data
-You will be access to messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.
+You will get access to messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.
 
 Temperature readings are available from the `zakar-temperature-readings` station and look like so:
 
