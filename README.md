@@ -35,7 +35,7 @@ Read more on the data that you will work with and the scenario [here](https://gi
 To get started with the hackathon, follow these steps:
 
 1. Sign up at the hackathon [main page](https://hackathon.memphis.dev). 
-1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> * After account creation head to the users page and create a new client-type user.<br> * Make sure to save the credentials, you will need them in step 5.
+1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> * After account creation head to the user's page and create a new client-type user.<br> * Make sure to save the credentials, you will need them in step 5.
    
 ![Group 1000002297 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/974fc81a-36f5-4566-9c2f-45abe564112d)
 
@@ -95,7 +95,7 @@ If you need help getting started, we came up with several ideas 💡:
 * **Idea #1:** Create a [Streamlit](https://github.com/streamlit/streamlit) dashboard that visualizes the geographic distributions of the temperature readings, tweets, and fire alerts.
 * **Idea #2:** Use a Jupyter Notebook to apply statistical outlier detection techniques to the temperature or<br> tweet data.
 * **Idea #3**: Train and apply machine learning models for outlier and anomaly detection to the temperature<br> or tweet data.
-* **Idea #4:** Ingest the data into Elasticsearch and using its anomaly detection techniques.
+* **Idea #4:** Ingest the data into Elasticsearch and use its anomaly detection techniques.
 * **Idea #5:** Using text embedding models like those from HuggingFace to convert the tweets into vectors<br> and perform clustering or similar to identify outliers.
 * **Idea #6:** Create a text classifier for the tweet data to identify fire-related tweets.
 
@@ -112,7 +112,7 @@ If you need help getting started, we came up with several ideas 💡:
   ```
 3. To submit your project please open an issue in this repo and follow the instructions. 
 4. Create a pull request against the original repository with your project.
-5. Finally submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
+5. Finally, submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ## 🎁  Prizes 
 ![Prizes 12](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/44d04508-cf0b-44dc-a6cc-35cc6cabedc8)
