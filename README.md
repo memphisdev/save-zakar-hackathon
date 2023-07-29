@@ -3,7 +3,7 @@
 A fictional island nation named Zakar is suffering from wildfires.<br>
 Let's help them build an early warning system and save lives and earth!
 
-# Save Zakar Hackathon
+# 🔥 Save Zakar Hackathon
 In collaboration with [Streamlit](https://github.com/streamlit/streamlit) & [Supabase](https://github.com/supabase),<br>
 we are happy to announce Memphis #1 hackathon **#SaveZakar**!<br>
 
