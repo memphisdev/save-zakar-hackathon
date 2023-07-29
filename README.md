@@ -25,7 +25,7 @@ In this hackathon, you are going to build a wildfire early warning system for th
 ##  🔥 The challenge
 Zakar Island has been struggling with wildfires in the last few years, taking human and animal lives. The fires also destroy homes and agricultural and industrial crops and cause famines.
 
-Zakar's current fire notification system only sends alerts 3 days after a fire has occurred. That's not enough time to intervene to prevent<br> a fire froms spreading or evacuate people. To aid the citizens, the government installed temperature sensors and hired you.<br> 
+Zakar's current fire notification system only sends alerts 3 days after a fire has occurred. That's not enough time to intervene to prevent a fire from spreading or evacuate people. To aid the citizens, the government installed temperature sensors and hired you.<br> 
 
 **Your task is to develop software that uses temperature readings and social media messages to detect wildfires before they spread and generate early-warning alerts.**
 
@@ -92,11 +92,11 @@ Notifications of past wildfire events are available from the `zakar-fire-alerts`
 Please feel free to approach this problem however you want. We'd love to see your creative solutions!<br>
 If you need help getting started, we came up with several ideas 💡:
 
-* **Idea #1:** Create a [Streamlit](https://github.com/streamlit/streamlit) dashboard that visualizes the geographic distributions of the temperature readings,<br> tweets, and fire alerts.
+* **Idea #1:** Create a [Streamlit](https://github.com/streamlit/streamlit) dashboard that visualizes the geographic distributions of the temperature readings, tweets, and fire alerts.
 * **Idea #2:** Use a Jupyter Notebook to apply statistical outlier detection techniques to the temperature or tweet data.
 * **Idea #3**: Train and apply machine learning models for outlier and anomaly detection to the temperature or tweet data.
 * **Idea #4:** Ingest the data into Elasticsearch and using its anomaly detection techniques.
-* **Idea #5:** Using text embedding models like those from HuggingFace to convert the tweets into vectors and perform<br> clustering or similar to identify outliers.
+* **Idea #5:** Using text embedding models like those from HuggingFace to convert the tweets into vectors and perform clustering or similar to identify outliers.
 * **Idea #6:** Create a text classifier for the tweet data to identify fire-related tweets.
 
 ## 🏁 Submission
