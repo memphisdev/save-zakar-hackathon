@@ -1,7 +1,7 @@
 ![GitHub README](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/608ddd4f-4b71-484f-8d10-ebed3622d13e)
 
 
-# Save the Island of Zakar! #
+# 🔥 Save the Island of Zakar! 🔥 #
 Zakar is a distinct island with diverse ecosystems from dense jungles to mind-blowing coral reefs.<br>
 Besides the nice and welcoming citizens, Zakar is home to rare and endangered species, and we're on a mission to keep them thriving.<br>
 The island has been struggling with wildfires in the last few years.  As a small island nation, fires are particularly problematic.<br>
@@ -16,13 +16,13 @@ Your chance to save Zakar is by building one or more of the following:
 
 ## The Scenario ##
 
-The government of Zakar placed temperature sensors across the island. Their citizens are also very active on social media.  
+The government of Zakar placed temperature sensors across the island, and luckily their citizens are also very active on social media.  
 The government contracted us to develop software to identify fires using temperature readings, social media messages, or both.  
-You will receive temperature readings from multiple sensors, tweets tagged with geographic locations, and (delayed) fire notifications.
-Your goal is to come up with tools for reliably detecting wildfires from these data before the official fire notifications arrive. As mentioned in the previous paragraph.
+You will receive temperature readings from multiple sensors, tweets tagged with geographic locations, and (delayed) fire notifications.<br>
+Your goal is to come up with tools for reliably detecting wildfires from these data before the official fire notifications arrive.
 
 ## The Data 
-You will be able to receive the messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs. 
+You will be able to receive the messages in real-time from Memphis.dev stations using one of the Memphis.dev client SDKs.<br> 
 Similarly, early warnings will be sent to another Memphis.dev station.
 
 Temperature readings are available from the `zakar-temperature-readings` station and look like so:
@@ -68,25 +68,25 @@ You should generate early warning messages in the following format and send them
 ```
 
 ## Possible challenges you may face:
-Uneven distributions of sensors (because it may not be possible to place sensors everywhere due to cost or geography)
-An uneven geographic sampling of tweets (because some areas have denser populations than others)
-Unreliable sensor readings (because equipment malfunctions sometimes)
-Sensors going offline due to dead batteries or destruction
+* Uneven distributions of sensors (because it may not be possible to place sensors everywhere due to cost or geography).<br>
+* An uneven geographic sampling of tweets (because some areas have denser populations than others).<br>
+* Unreliable sensor readings (because equipment malfunctions sometimes).<br>
+* Sensors going offline due to dead batteries or destruction.
 
-## Getting started - Part 2 - Choose a path
-### 1. Build an early-warning system (Anomaly detection)
+## ⭐ Getting Started - Part 2 - Choose a path
+### 1. Build an early-warning system (Anomaly detection) 🔥
 ![Group 1000002296 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/b6c40f6f-5530-4a37-b3cb-e0e31d6aae95)
 
-To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer`.
+To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer`.<br>
 For your convenience, we provided a consumer code example within this repo called `consumer_example.py` + `mongodb_example.py`
 ```
 $ python example_consumer.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
 ```
 
-### 2. Visualize the data
+### 2. Visualize the data 🔥
 ![Data Visualization Path (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/c167f35f-657e-43f3-9d74-dcc999e9505e)
 
-To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer` and store it in a [Streamlit-supported database](https://docs.streamlit.io/knowledge-base/tutorials/databases) (For example, Supabase) for further visualization through Streamlit.
+To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer` and store it in a [Streamlit-supported database](https://docs.streamlit.io/knowledge-base/tutorials/databases) (For example, Supabase) for further visualization through Streamlit.<br>
 Please pay attention that for the visualization path, it is mandatory to use Streamlit (Community cloud).
 
 For your convenience, we provided a consumer code example within this repo called `consumer_example.py` + `mongodb_example.py`
