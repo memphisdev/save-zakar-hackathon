@@ -1,4 +1,4 @@
-![GitHub README](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/dc56d45f-8861-49b0-9796-05f33ea8a9d4)
+![1660x498 (600x180) (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/ef985132-2dcf-4861-815b-4bc7d3f5d301)
 
 A fictional island nation named Zakar is suffering from wildfires.<br>
 Let's help them build an early warning system and save lives and earth!
@@ -37,7 +37,8 @@ To get started with the hackathon, follow these steps:
 1. Sign up at the hackathon [main page](https://hackathon.memphis.dev). 
 1. Create a [Memphis Cloud](https://cloud.memphis.dev/) account.<br> * After account creation head to the user's page and create a new client-type user.<br> * Make sure to save the credentials, you will need them in step 5.
    
-![Group 1000002297 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/974fc81a-36f5-4566-9c2f-45abe564112d)
+![Group 1000002297 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/14bb3740-7c94-47c1-a354-44947c2af81e)
+
 
 
 1. Fork this repo.
@@ -115,7 +116,8 @@ If you need help getting started, we came up with several ideas 💡:
 5. Finally, submit your project via the following [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
 ## 🎁  Prizes 
-![Prizes 12](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/44d04508-cf0b-44dc-a6cc-35cc6cabedc8)
+![Prizes 2 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/ca5f16ab-eec9-4b43-b6aa-b51813d60784)
+
 
 Each project will be judged by the following categories:
 * Creativity.
@@ -136,7 +138,8 @@ The **2nd** best project will receive -
 
 The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and Streamlit.🌟<br>
 
-![Prizes](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/512d356d-44d5-431b-9618-9ac982cad104)
+![Prizes (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/a815d6b9-4477-4e48-967a-bb1f768add5d)
+
 
 ## FAQ ⁉️
   
