@@ -30,7 +30,7 @@ def line_reader(zipfl, flname):
         lines = [ln.strip() for ln in TextIOWrapper(fl, encoding="utf-8")]
         return lines
 
-async def main(host, username, password, account_id):
+async def main(host, username, password, account_id, rate_limiting):
     try:        
         print("Connecting to Memphis.")
         memphis = Memphis()
@@ -56,8 +56,20 @@ async def main(host, username, password, account_id):
                 print("Uploading data.")
                 messages = line_reader(zipfl, flname)
                 producer = await memphis.producer(station_name=station, producer_name="data-uploader")
-                for msg in tqdm(messages):
-                    await producer.produce(bytearray(msg, "utf-8"), async_produce=True)
+
+                if not rate_limiting:
+                    for msg in tqdm(messages):
+                        await producer.produce(bytearray(msg, "utf-8"), async_produce=True)
+                else:
+                    background_tasks = set()
+                    for msg in tqdm(messages):
+                        task = asyncio.create_task(producer.produce(bytearray(msg, "utf-8")))
+                        background_tasks.add(task)
+                        task.add_done_callback(background_tasks.discard)
+
+                        if len(background_tasks) >= 1000:
+                            while len(background_tasks) >= 500:
+                                await asyncio.sleep(0.1)
                 print()
 
         print("Destroying producer.")
@@ -92,9 +104,13 @@ def parse_args():
                         required=True,
                         help="Memphis account ID")
 
+    parser.add_argument("--enable-rate-limiting",
+                        action="store_true",
+                        help="Enable rate limiting to avoid timeout errors")
+
     return parser.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
     
-    asyncio.run(main(args.host, args.username, args.password, args.account_id))
+    asyncio.run(main(args.host, args.username, args.password, args.account_id, args.enable_rate_limiting))
