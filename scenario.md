@@ -1,4 +1,4 @@
-![GitHub README](https://github.com/memphisdev/save-zakar-hackathon/assets/70286779/608ddd4f-4b71-484f-8d10-ebed3622d13e)
+![1660x498 (600x180) (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/4b035dc3-75ce-44a4-902c-a5200bf7a79c)
 
 
 # 🔥 Save the Island of Zakar! 🔥 #
@@ -75,7 +75,8 @@ You should generate early warning messages in the following format and send them
 
 ## ⭐ Getting Started - Part 2 - Choose a path
 ### 1. Build an early-warning system (Anomaly detection) 🔥
-![Group 1000002296 (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/b6c40f6f-5530-4a37-b3cb-e0e31d6aae95)
+![Anomaly path](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/2a6afd69-ee64-42d7-82e3-41cecf8fd091)
+
 
 To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer`.<br>
 For your convenience, we provided a consumer code example within this repo called `consumer_example.py` + `mongodb_example.py`
@@ -84,7 +85,8 @@ $ python example_consumer.py --host <memphis_hostname> --username <client_type_u
 ```
 
 ### 2. Visualize the data 🔥
-![Data Visualization Path (1)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/c167f35f-657e-43f3-9d74-dcc999e9505e)
+![Data Visualization Path (2)](https://github.com/memphisdev/save-zakar-hackathon/assets/107035359/7c7efcd0-f393-4830-a167-f9e064f316cd)
+
 
 To read the data from Memphis, you would need to consume the data from Memphis stations using a service called `consumer` and store it in a [Streamlit-supported database](https://docs.streamlit.io/knowledge-base/tutorials/databases) (For example, Supabase) for further visualization through Streamlit.<br>
 Please pay attention that for the visualization path, it is mandatory to use Streamlit (Community cloud).
