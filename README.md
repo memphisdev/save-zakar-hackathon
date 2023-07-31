@@ -52,6 +52,12 @@ To get started with the hackathon, follow these steps:
    $ pip install -r requirements.txt
    $ python3 setup_memphis.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
    ```
+
+   If you encounter timeout errors, enable rate limiting:
+   ```bash
+   $ python3 setup_memphis.py --enable-rate-limiting --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
+   ```
+   
 For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started---part-2---choose-a-path).
 
 ## The Data
