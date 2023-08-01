@@ -174,6 +174,28 @@ The projects will be judged by the following
 * Architecture
 * Algorithm
 
+### Is it possible to repeat already sent messages?
+You can either use a different consumer name (so a different consumer is created) or delete the consumer and recreate it.
+
+### Question about the swag, is the package one per team or one per person of the team?
+The Swag is one per person but the gaming pack is per team
+
+### Is the dataset used to test our model different than what we've been provided?
+We generated 10 years worth of data. We provided you with the first 7 years for training and evaluation of your models. We will evaluate your data on the remaining 3 years, which we haven't shared with you
+
+### Will re-running the setup script create new data?
+No.  Everybody is using the same data so that the competition is fair.  Re-running the script will add more copies of same the data to Memphis.
+
+### What should be ideal time for running setup_memphis.py file to load new data?
+Without rate limiting, it takes about 15 min. With rate limiting, closer to 45 min.
+
+### how often should we run the script to get new data?
+You only need to run it once. There won't be any new data. It will upload 7 years worth of data to Memphis.
+If you want to replay the messages, you can create a new consumer with a different name. Each consumer will start from the beginning of the message history.
+
+### If I create a model, do I need to send you a file with the model (.h5 or .pkl) and the Jupyter notebook?
+Correct.  You need to save a serialized copy of the model in your repository with instructions for how to apply it.
+
 ## 🚀 Useful links 
  - [Memphis.dev documentation](https://docs.memphis.dev/memphis/getting-started/readme)
  - [Memphis.dev Cloud Signup](https://cloud.memphis.dev)
