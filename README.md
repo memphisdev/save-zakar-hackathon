@@ -57,6 +57,8 @@ To get started with the hackathon, follow these steps:
    ```bash
    $ python3 setup_memphis.py --enable-rate-limiting --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
    ```
+
+   The data set is pre-generated and fixed.  Re-running the setup script will upload additional copies of the same messages to Memphis.  This is to ensure that everyone is working on the same data set so that no team has an advantage or disadvantage.
    
 For step 2, head [here](https://github.com/memphisdev/save-zakar-hackathon/blob/main/scenario.md#getting-started---part-2---choose-a-path).
 
