@@ -96,6 +96,10 @@ For your convenience, we provided a consumer code example within this repo calle
 $ python example_consumer.py --host <memphis_hostname> --username <client_type_username> --password <client_type_password> --account-id <memphis_account_id>
 ```
 
+## FAQ ⁉️
+###  Is it possible to repeat already sent messages?
+You can either use a different consumer name (so a different consumer is created) or delete the consumer and recreate it.
 
-
+### Is the data always going to be the same? (or be streaming new data live)?
+There won't be changes in the datasets.
 
