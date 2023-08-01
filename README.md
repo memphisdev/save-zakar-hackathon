@@ -152,6 +152,9 @@ The top 10 **Runner ups** will receive an awesome swag pack by Memphis.dev and S
 ### Where do I sign up?
 You can sign up on the main hackathon [page](https://www.hackathon.memphis.dev/). 
 
+### Where do I declare my team mates?  
+Up to 5 teammates. Should be declared in the submission form.
+
 ### When can I submit the project?
 Anytime between July 31st to August 7th opening an issue in this repo and using this [form](https://forms.gle/Hkmk1aLv9FvrZox98).
 
