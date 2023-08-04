@@ -34,6 +34,9 @@ scikit-learn
 seaborn
 nltk
 statsmodels
+supabase
+psycopg2
+dbt-postgres
 
 # Current package
 -e .

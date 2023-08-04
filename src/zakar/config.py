@@ -15,6 +15,22 @@ DATASET_PATH = DATA_PATH / "dataset"
 
 
 @dataclass(frozen=True)
+class PostgresConnectionInfo:
+    HOST: str = os.getenv("POSTGRES_HOST")
+    DATABASE_NAME: str = "postgres"
+    PORT: int = 5432
+    USER: str = "postgres"
+    PASSWORD: str = os.getenv("DATABASE_PASSWORD")
+
+
+@dataclass(frozen=True)
+class SupabaseCredentials:
+    PASSWORD: str = os.getenv("SUPABASE_DATABASE_PASSWORD")
+    PROJECT_URL: str = os.getenv("SUPABASE_PROJECT_URL")
+    API_KEY: str = os.getenv("SUPABASE_API_KEY")
+
+
+@dataclass(frozen=True)
 class MemphisCredentials:
     HOST: str = os.getenv("HOSTNAME")
     USERNAME: str = os.getenv("CLIENT_USERNAME")
