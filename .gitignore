@@ -1,0 +1,8 @@
+.env
+venv
+data
+.vscode
+*.egg-info
+build
+__pycache__
+*.ipynb

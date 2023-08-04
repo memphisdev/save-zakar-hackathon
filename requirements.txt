@@ -18,3 +18,22 @@ referencing==0.29.1
 rpds-py==0.8.10
 sniffio==1.3.0
 tqdm==4.65.0
+
+# Additional
+python-dotenv==1.0.0
+black==23.7.0
+flake8==6.1.0
+isort==5.12.0
+pandas==2.0.3
+pyarrow==12.0.1
+ipykernel
+plotly
+nbformat
+gensim
+scikit-learn
+seaborn
+nltk
+statsmodels
+
+# Current package
+-e .
