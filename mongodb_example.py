@@ -32,6 +32,7 @@ async def main(host, username, password, account_id, mongo_uri, mongo_database):
                     serialized_record = msg.get_data()
                     record = json.loads(serialized_record)
                     collection.insert_one(record)
+                    msg.ack()
 
     except (MemphisError, MemphisConnectError) as e:
         print(e)
