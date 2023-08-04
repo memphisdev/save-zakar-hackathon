@@ -5,7 +5,7 @@ from psycopg2 import OperationalError
 from psycopg2.extensions import connection
 
 
-def execute_sql_all_files(connection: connection, directory: Path):
+def execute_all_sql_files(connection: connection, directory: Path):
     for sql_file in directory.iterdir():
         execute_sql_file(connection=connection, sql_file=sql_file)
 

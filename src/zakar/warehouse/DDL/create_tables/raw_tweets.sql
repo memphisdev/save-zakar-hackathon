@@ -1,7 +1,7 @@
-CREATE TABLE IF NOT EXISTS raw.tweets(
-    tweet_id SERIAL PRIMARY KEY,
-    day INTEGER NOT NULL,
-    geospatial_x SMALLINT NOT NULL,
-    geospatial_y SMALLINT NOT NULL,
-    tweet TEXT NOT NULL,
+create table if not exists raw.tweets (
+    tweet_id serial primary key,
+    day integer not null,
+    geospatial_x smallint not null,
+    geospatial_y smallint not null,
+    text text not null
 );

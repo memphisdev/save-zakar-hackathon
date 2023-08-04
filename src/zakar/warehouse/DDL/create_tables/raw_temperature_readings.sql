@@ -1,7 +1,7 @@
-CREATE TABLE IF NOT EXISTS raw.temperature_readings(
-    temperature_readings_id SERIAL PRIMARY KEY,
-    geospatial_x SMALLINT NOT NULL,
-    geospatial_y SMALLINT NOT NULL,
-    temperature SMALLINT NOT NULL,
-    day INTEGER NOT NULL,
+create table if not exists raw.temperature_readings(
+    temperature_readings_id serial primary key,
+    geospatial_x smallint not null,
+    geospatial_y smallint not null,
+    temperature smallint not null,
+    day integer not null
 );
