@@ -26,6 +26,7 @@ async def main(host, username, password, account_id):
                     serialized_record = msg.get_data()
                     record = json.loads(serialized_record)
                     print(record)
+                    msg.ack()
 
     except (MemphisError, MemphisConnectError) as e:
         print(e)
