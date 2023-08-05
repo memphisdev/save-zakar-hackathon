@@ -1,14 +1,16 @@
 import os
 from dataclasses import dataclass, field
-from enum import Enum, StrEnum, auto
+from enum import StrEnum, auto
 from pathlib import Path
 
 import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
-ROOT_PATH = Path.cwd().parent
+FILE_DIR_PATH = Path(__file__).parent
+ROOT_PATH = FILE_DIR_PATH.parents[2]
 DATA_PATH = ROOT_PATH / "data"
+WAREHOUSE_PATH = FILE_DIR_PATH / "warehouse"
 RAW_PATH = DATA_PATH / "raw"
 PREPROCESSED_PATH = DATA_PATH / "preprocessed"
 DATASET_PATH = DATA_PATH / "dataset"
@@ -38,7 +40,7 @@ class MemphisCredentials:
     ACCOUNT_ID: int = int(os.getenv("ACCOUNT_ID"))
 
 
-class Station(Enum):
+class StationName(StrEnum):
     FIRE_ALERTS: str = "zakar-fire-alerts"
     TEMPERATURE_READINGS: str = "zakar-temperature-readings"
     TWEETS: str = "zakar-tweets"
@@ -51,10 +53,31 @@ class DataName(StrEnum):
 
 
 @dataclass
+class Producer:
+    station_name: StationName
+    data_name: DataName
+
+    @property
+    def insert_command_path(self) -> Path:
+        return WAREHOUSE_PATH / f"DML/insert/raw_{self.data_name}.sql"
+
+    @property
+    def raw_path(self) -> Path:
+        return RAW_PATH / f"{self.dataname}.json"
+
+    @property
+    def raw_data(self) -> pd.DataFrame:
+        if self.fire_alerts_path.exists():
+            return pd.read_json(self.raw_path, lines=True)
+        else:
+            raise FileNotFoundError(f"Could not find {self.fire_alerts_path}.")
+
+
+@dataclass
 class ConsumerConfig:
     consumer_name: str = "consumer"
-    stations: list[Station] = field(
-        default_factory=lambda: [station.value for station in Station]
+    stations: list[StationName] = field(
+        default_factory=lambda: [station.value for station in StationName]
     )
 
 

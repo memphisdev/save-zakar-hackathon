@@ -1,12 +1,9 @@
-import argparse
 import asyncio
-import os
 import urllib
 import zipfile
 from io import TextIOWrapper
 
 from memphis import (
-    Headers,
     Memphis,
     MemphisConnectError,
     MemphisError,
@@ -14,6 +11,8 @@ from memphis import (
     MemphisSchemaError,
 )
 from tqdm import tqdm
+
+from config import MemphisCredentials
 
 STATIONS = {
     "tweets": "zakar-tweets",
@@ -87,23 +86,13 @@ async def main(host, username, password, account_id):
         await memphis.close()
 
 
-def parse_args():
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument("--host", type=str, required=True, help="Memphis broker host")
-
-    parser.add_argument("--username", type=str, required=True, help="Memphis username")
-
-    parser.add_argument("--password", type=str, required=True, help="Memphis password")
-
-    parser.add_argument(
-        "--account-id", type=int, required=True, help="Memphis account ID"
-    )
-
-    return parser.parse_args()
-
-
 if __name__ == "__main__":
-    args = parse_args()
-
-    asyncio.run(main(args.host, args.username, args.password, args.account_id))
+    credentials = MemphisCredentials()
+    asyncio.run(
+        main(
+            host=credentials.HOST,
+            username=credentials.USERNAME,
+            password=credentials.PASSWORD,
+            account_id=credentials.ACCOUNT_ID,
+        )
+    )

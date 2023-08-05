@@ -7,16 +7,17 @@ import json
 import os
 
 from memphis import Memphis, MemphisConnectError, MemphisError, MemphisHeaderError
+
 from zakar.config import ConsumerConfig, MemphisCredentials
 
 
-async def main(host, username, password, account_id, station_name):
+async def main(host, username, password, account_id, station_name="test"):
     try:
         memphis = Memphis()
         await memphis.connect(
             host=host, username=username, password=password, account_id=account_id
         )
-        memphis = await fetch_records(memphis, station_name)
+        memphis = await fetch_records(memphis, station_name, consumer_name)
 
     except (MemphisError, MemphisConnectError) as e:
         print(e)
