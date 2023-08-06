@@ -6,3 +6,4 @@ data
 build
 __pycache__
 *.ipynb
+secrets.toml

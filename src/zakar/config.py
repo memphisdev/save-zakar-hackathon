@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 FILE_DIR_PATH = Path(__file__).parent
-ROOT_PATH = FILE_DIR_PATH.parents[2]
+ROOT_PATH = FILE_DIR_PATH.parents[1]
 DATA_PATH = ROOT_PATH / "data"
 WAREHOUSE_PATH = FILE_DIR_PATH / "warehouse"
 RAW_PATH = DATA_PATH / "raw"
@@ -63,11 +63,11 @@ class Producer:
 
     @property
     def raw_path(self) -> Path:
-        return RAW_PATH / f"{self.dataname}.json"
+        return RAW_PATH / f"{self.data_name}.json"
 
     @property
     def raw_data(self) -> pd.DataFrame:
-        if self.fire_alerts_path.exists():
+        if self.raw_path.exists():
             return pd.read_json(self.raw_path, lines=True)
         else:
             raise FileNotFoundError(f"Could not find {self.fire_alerts_path}.")

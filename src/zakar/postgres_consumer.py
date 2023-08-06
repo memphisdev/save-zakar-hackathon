@@ -47,7 +47,7 @@ async def main(
                     execute_sql_file(
                         postgres_connection, producer.insert_command_path, record
                     )
-                    msg.ack()
+                    await msg.ack()
 
     except (MemphisError, MemphisConnectError) as e:
         print(e)
@@ -81,20 +81,20 @@ if __name__ == "__main__":
             account_id=credentials.ACCOUNT_ID,
             postgres_connection=pg_con,
         ),
-        # main(
-        #     producer=fire_alerts,
-        #     host=credentials.HOST,
-        #     username=credentials.USERNAME,
-        #     password=credentials.PASSWORD,
-        #     account_id=credentials.ACCOUNT_ID,
-        #     postgres_connection=pg_con,
-        # ),
-        # main(
-        #     producer=temperature_readings,
-        #     host=credentials.HOST,
-        #     username=credentials.USERNAME,
-        #     password=credentials.PASSWORD,
-        #     account_id=credentials.ACCOUNT_ID,
-        #     postgres_connection=pg_con,
-        # ),
+        main(
+            producer=fire_alerts,
+            host=credentials.HOST,
+            username=credentials.USERNAME,
+            password=credentials.PASSWORD,
+            account_id=credentials.ACCOUNT_ID,
+            postgres_connection=pg_con,
+        ),
+        main(
+            producer=temperature_readings,
+            host=credentials.HOST,
+            username=credentials.USERNAME,
+            password=credentials.PASSWORD,
+            account_id=credentials.ACCOUNT_ID,
+            postgres_connection=pg_con,
+        ),
     )

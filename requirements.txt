@@ -37,6 +37,7 @@ statsmodels
 supabase
 psycopg2
 dbt-postgres
+streamlit
 
 # Current package
 -e .
