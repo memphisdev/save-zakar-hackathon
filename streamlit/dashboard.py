@@ -8,7 +8,7 @@ import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extensions import connection
 from pyecharts import options as opts
-from pyecharts.charts import EffectScatter, Gauge, HeatMap, Line, Scatter
+from pyecharts.charts import Calendar, EffectScatter, Gauge, HeatMap, Line, Scatter
 from pyecharts.commons.utils import JsCode
 from pyecharts.faker import Faker
 from pyecharts.globals import SymbolType
@@ -26,7 +26,11 @@ DATE_RANGE = pd.DataFrame(
     }
 )
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    layout="wide",
+    page_icon="streamlit/assets/fire_icon.png",
+    page_title="Save Zakar",
+)
 
 
 def main(con: connection) -> None:
@@ -45,11 +49,12 @@ def main(con: connection) -> None:
         st.write(
             """We are in the year 2037 at an idyllic island full of biodiversity and friendly
             people. But despite all the beauty, the small island of
-            Zakar is plagued by regular fires. Luckily, by the ingenuity of Zakar's people,
+            Zakar is plagued by seasonal wild fires. Luckily, by the ingenuity of Zakar's people,
             they have been able to develop an early fire detection system.
-            Use this dashboard to understand the trends and patterns of these fires,
+            Use this dashboard to understand the historical trends and patterns of these fires,
             and maybe you will be able to help us improve our alerting system!"""
         )
+
     l, left, right, r = st.columns([1, 35, 25, 1], gap="small")
     h = plot_heatmap(temp)
     with left:
@@ -64,13 +69,18 @@ def main(con: connection) -> None:
         df_filtered = temp.query(f"(geospatial_x=={geo[0]}) & (geospatial_y=={geo[1]})")
 
     with st.sidebar:
-        fire_icon(100)
+        # fire_icon(100)
         date = st.date_input(
             label="Choose a date",
             value=MIN_DATE,
             min_value=MIN_DATE,
             max_value=DATE_RANGE["date"].max(),
         )
+        # plot_date_heatmap()
+        # _, mid, _ = st.columns([1, 5, 1])
+        # with mid:
+        #     st_echarts(plot_gauge(10), width=200, height=150)
+        # st_pyecharts(plot_gauge(10), width=200)
         st.caption("By Kristian André Jakobsen & Alessandra Oshiro")
     tweets = fetch_tweets(
         con,
@@ -79,18 +89,14 @@ def main(con: connection) -> None:
         geo[1],
     )
     with right:
-        st.subheader(f"Tweets for {date:%d} {date:%B} {date:%Y} at {geo[0], geo[1]}")
+        st.subheader(f"Tweets for {date:%-d} {date:%B} {date:%Y} at {geo[0], geo[1]}")
         if tweets.empty:
             st.info("There are no tweets for the selected date and location.")
         for t in tweets["tweet"]:
             st.text("")
             tweet(t)
     st.empty()
-    st_pyecharts(
-        plot_line(df_filtered, geo),
-        # height=300,
-        # width=700,
-    )
+    plot_line(df_filtered, geo, date)
 
 
 def fetch_tweets(con, day, geo_x, geo_y):
@@ -241,78 +247,211 @@ def plot_heatmap(df):
     # st.write(df2)
 
 
-def plot_line(df, geo) -> Line:
-    st.subheader(f"Historical Temperature at {geo[0], geo[1]}")
-    return (
-        Line(
-            init_opts=opts.InitOpts(
-                animation_opts=opts.AnimationOpts(animation_duration=3000)
+def plot_line(df, geo, date) -> Line:
+    left, center, _ = st.columns([1, 5, 1])
+    with left:
+        st.selectbox("Year", range(2030, 2037))
+    with center:
+        plot_date_heatmap()
+    st.subheader(f"Temperature at {geo[0], geo[1]}")
+    left, right = st.columns([1, 4], gap="small")
+    temp_today = int(df.loc[df["date"] == date, "temperature"].iloc[0])
+    with left:
+        st.subheader(f"For {date:%-d} {date:%B} {date:%Y}")
+        st_echarts(plot_gauge(temp_today), width=300, height=200)
+    with right:
+        st.subheader("‎‎ ‎ ‎ ‎ ‎ ‎" "‎ ‎ ‎ ‎ " + "Historical")
+        st_pyecharts(
+            Line(
+                init_opts=opts.InitOpts(
+                    animation_opts=opts.AnimationOpts(animation_duration=3000)
+                )
+            ).add_xaxis(df["date"])
+            # .add_xaxis([1, 2, 3])
+            .add_yaxis(
+                series_name="°F",
+                y_axis=df["temperature"],
+                symbol_size=1,
+                # is_symbol_show=False,
+                is_smooth=True,
+                label_opts=opts.LabelOpts(is_show=False),
+                color="#FF5733",
+                markline_opts=opts.MarkLineOpts(
+                    data=[opts.MarkLineItem(type_="average", name="Mean Temperature")],
+                    is_silent=False,
+                    precision=1,
+                    linestyle_opts=opts.LineStyleOpts(color=WATER_COLOR),
+                    label_opts=opts.LabelOpts(font_size=16, formatter="{c}°F"),
+                ),
             )
-        ).add_xaxis(df["date"])
-        # .add_xaxis([1, 2, 3])
-        .add_yaxis(
-            series_name="°F",
-            y_axis=df["temperature"],
-            symbol_size=1,
-            # is_symbol_show=False,
-            is_smooth=True,
-            label_opts=opts.LabelOpts(is_show=False),
-            color="#FF5733",
-            markline_opts=opts.MarkLineOpts(
-                data=[opts.MarkLineItem(type_="average", name="Mean Temperature")],
-                is_silent=False,
-                precision=1,
-                linestyle_opts=opts.LineStyleOpts(color=WATER_COLOR),
-                label_opts=opts.LabelOpts(font_size=16, formatter="{c}°F"),
-            ),
+            # .set_series_opts(
+            #     areastyle_opts=opts.AreaStyleOpts(color="#FF5733", opacity=0.5),
+            # )
+            .set_global_opts(
+                title_opts=opts.TitleOpts(is_show=False),
+                tooltip_opts=opts.TooltipOpts(
+                    trigger="axis",
+                ),
+                legend_opts=opts.LegendOpts(is_show=False),
+                xaxis_opts=opts.AxisOpts(
+                    is_scale=True,
+                    type_="time",
+                    boundary_gap=False,
+                    axisline_opts=opts.AxisLineOpts(is_on_zero=False),
+                    position="bottom",
+                    splitline_opts=opts.SplitLineOpts(is_show=False),
+                ),
+                yaxis_opts=opts.AxisOpts(
+                    axisline_opts=opts.AxisLineOpts(is_show=False),
+                    type_="value",
+                    splitline_opts=opts.SplitLineOpts(
+                        linestyle_opts=opts.LineStyleOpts(is_show=True, width=10)
+                    ),
+                ),
+                datazoom_opts=[
+                    opts.DataZoomOpts(
+                        is_realtime=True,
+                        type_="slider",
+                        range_start=0,
+                        range_end=33,
+                        # xaxis_index=[0, 2500],
+                    )
+                ],
+                visualmap_opts=opts.VisualMapOpts(
+                    # is_show=False,
+                    pos_left="center",
+                    pos_top="5",
+                    # pos_right="50",
+                    orient="horizontal",
+                    min_=-10,
+                    max_=110,
+                    range_size=2,
+                    range_text=["Hot", "Freezing"],
+                    is_piecewise=False,
+                ),
+            )
         )
-        # .set_series_opts(
-        #     areastyle_opts=opts.AreaStyleOpts(color="#FF5733", opacity=0.5),
-        # )
+
+
+def plot_gauge(temp_value: int):
+    return {
+        "series": [
+            {
+                "type": "gauge",
+                "center": ["50%", "60%"],
+                "startAngle": 200,
+                "endAngle": -20,
+                "min": -20,
+                "max": 140,
+                "splitNumber": 8,
+                "itemStyle": {"color": "#FFAB91"},
+                "progress": {"show": True, "width": 15},
+                "pointer": {"show": False},
+                "axisLine": {"lineStyle": {"width": 15}},
+                "axisTick": {
+                    "distance": -23,
+                    "splitNumber": 4,
+                    "lineStyle": {"width": 2, "color": "#999"},
+                },
+                "splitLine": {
+                    "distance": -30,
+                    "length": 9,
+                    "lineStyle": {"width": 3, "color": "#999"},
+                },
+                "axisLabel": {
+                    # "show": False,
+                    "distance": -17,
+                    "color": "#999",
+                    "fontSize": 14,
+                },
+                "anchor": {"show": False},
+                "title": {"show": False},
+                "detail": {
+                    "valueAnimation": True,
+                    "width": "60%",
+                    "lineHeight": 40,
+                    "borderRadius": 8,
+                    "offsetCenter": [0, "-15%"],
+                    "fontSize": 32,
+                    "fontWeight": "bolder",
+                    "formatter": "{value} °F",
+                    "color": "inherit",
+                },
+                "data": [{"value": temp_value}],
+            },
+            {
+                "type": "gauge",
+                "center": ["50%", "60%"],
+                "startAngle": 200,
+                "endAngle": -20,
+                "min": -20,
+                "max": 140,
+                "itemStyle": {"color": "#FD7347"},
+                "progress": {"show": True, "width": 4},
+                "pointer": {"show": False},
+                "axisLine": {"show": False},
+                "axisTick": {"show": False},
+                "splitLine": {"show": False},
+                "axisLabel": {"show": False},
+                "detail": {"show": False},
+                "data": [{"value": temp_value}],
+            },
+        ]
+    }
+
+
+def plot_date_heatmap():
+    begin = datetime.date(2017, 1, 1)
+    end = datetime.date(2017, 12, 31)
+    data = [
+        [str(begin + datetime.timedelta(days=i)), random.randint(1000, 25000)]
+        for i in range((end - begin).days + 1)
+    ]
+
+    c = (
+        Calendar()
+        .add("", data, calendar_opts=opts.CalendarOpts(range_="2017"))
         .set_global_opts(
             title_opts=opts.TitleOpts(is_show=False),
-            tooltip_opts=opts.TooltipOpts(
-                trigger="axis",
-            ),
-            legend_opts=opts.LegendOpts(is_show=False),
-            xaxis_opts=opts.AxisOpts(
-                is_scale=True,
-                type_="time",
-                boundary_gap=False,
-                axisline_opts=opts.AxisLineOpts(is_on_zero=False),
-                position="bottom",
-                splitline_opts=opts.SplitLineOpts(is_show=False),
-            ),
-            yaxis_opts=opts.AxisOpts(
-                axisline_opts=opts.AxisLineOpts(is_show=False),
-                type_="value",
-                splitline_opts=opts.SplitLineOpts(
-                    linestyle_opts=opts.LineStyleOpts(is_show=True, width=10)
-                ),
-            ),
-            datazoom_opts=[
-                opts.DataZoomOpts(
-                    is_realtime=True,
-                    type_="slider",
-                    range_start=0,
-                    range_end=33,
-                    # xaxis_index=[0, 2500],
-                )
-            ],
             visualmap_opts=opts.VisualMapOpts(
-                # is_show=False,
-                pos_left="center",
-                pos_top="5",
-                # pos_right="50",
+                max_=20000,
+                min_=500,
                 orient="horizontal",
-                min_=-10,
-                max_=110,
-                range_size=2,
-                range_text=["Hot", "Freezing"],
                 is_piecewise=False,
+                pos_bottom="-6",
+                pos_left="center",
+                range_text=["Hot", "Freezing"],
             ),
         )
     )
+    st_pyecharts(c, width=1000, height=250)
+
+    # st_echarts(
+    #     {
+    #         "tooltip": {
+    #             "position": "top",
+    #         },
+    #         "visualMap": {
+    #             "min": 500,
+    #             "max": 10000,
+    #             "calculable": True,
+    #             "orient": "vertical",
+    #             "left": "-250",
+    #             "top": "center",
+    #         },
+    #         "calendar": [{"orient": "vertical", "range": "2017"}],
+    #         "series": [
+    #             {
+    #                 "type": "heatmap",
+    #                 "coordinateSystem": "calendar",
+    #                 "calendarIndex": 0,
+    #                 "data": data,
+    #             }
+    #         ],
+    #     },
+    #     width=400,
+    #     height=1150,
+    # )
 
 
 @st.cache_resource
