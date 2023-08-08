@@ -1,0 +1,9 @@
+def count_locs(temp):
+    return temp.merge(
+        temp[common_cols]
+        .rename({"day": "n_occurences"}, axis=1)
+        .groupby(["geospatial_x", "geospatial_y"])
+        .count()
+        .reset_index(),
+        how="left",
+    )
