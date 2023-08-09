@@ -11,6 +11,7 @@ import pandas as pd
 from memphis import Memphis, MemphisConnectError, MemphisError, MemphisHeaderError
 
 from zakar.config import ConsumerConfig, MemphisCredentials
+from zakar.predictor import fire_prediction
 
 stations = ["zakar-tweets", "zakar-temperature-readings"]
 
@@ -37,7 +38,7 @@ async def main(
         temp_consumer = await memphis.consumer(
             station_name=stations[1], consumer_name=f"{stations[1]}-consumer"
         )
-        day = 1
+        day = 43
         while True:
             print(day)
             (tweets, day), (temp, _) = await asyncio.gather(
@@ -58,9 +59,8 @@ async def early_alert_system(
     temperature_readings: list[dict[str, str | int]],
     tweets: list[dict[str, str | int]],
 ):
-    print(len(temperature_readings))
-    print(len(tweets))
-    print()
+    preds = fire_prediction(tweets=tweets, temperature_readings=temperature_readings)
+    print(preds)
 
 
 async def fetch_records(consumer, day):
@@ -75,29 +75,6 @@ async def fetch_records(consumer, day):
                     return records, record["day"]
                 records.append(record)
                 await msg.ack()
-
-
-# async def process_msgs(batch, station_name):
-#     # global combined_stations
-#     global day
-#     global stations
-#     records = []
-#     for msg in batch:
-#         serialized_record = msg.get_data()
-#         record = json.loads(serialized_record)
-#         stations[station_name].append(record)
-#         if day == 0:
-#             day = record["day"]
-#         if record["day"] > day:
-#             print(station_name)
-#             print(stations[station_name][0])
-#             time.sleep(3)
-#             # combined_stations = combined_stations.query(f"day != {day}")
-#             day = record["day"]
-#             stations[station_name] = []
-#             return records
-#         records.append(record)
-#         await msg.ack()
 
 
 combined_stations = pd.DataFrame(

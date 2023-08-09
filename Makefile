@@ -11,7 +11,7 @@ postgres_consume: raw_tables
 	python3 src/zakar/postgres_consumer.py
 
 dashboard:
-	streamlit run streamlit/dashboard.py
+	streamlit run streamlit/Welcome.py
 
 csv_in_postgres:
 	for file in tweets fire_alerts temperature_readings ; do \

@@ -1,2 +1,0 @@
-X_train.groupby("fire").sum()
-# .plot(x=[weak_word_predictors], y="fire")

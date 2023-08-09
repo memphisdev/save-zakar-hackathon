@@ -1,5 +1,0 @@
-import pandas as pd
-
-tweets = pd.read_json("../data/raw/tweets.json", lines=True)
-temp = pd.read_json("../data/raw/temperature_readings.json", lines=True)
-alerts = pd.read_json("../data/raw/fire_alerts.json", lines=True)

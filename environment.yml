@@ -1,6 +1,7 @@
 name: save-zakar
 dependencies:
   - python=3.11
+  - lightgbm
   - pip
   - pip:
     - -r requirements.txt

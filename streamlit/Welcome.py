@@ -2,6 +2,7 @@ import datetime
 import random
 import time
 
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import psycopg2
@@ -45,7 +46,7 @@ def main(con: connection) -> None:
     )
     _, mid, _ = st.columns([1, 5, 1])
     with mid:
-        st.header("Welcome to Zakar!")
+        st.title("Welcome to Zakar!")
         st.write(
             """We are in the year 2037 at an idyllic island full of biodiversity and friendly
             people. But despite all the beauty, the small island of
@@ -76,6 +77,9 @@ def main(con: connection) -> None:
             min_value=MIN_DATE,
             max_value=DATE_RANGE["date"].max(),
         )
+        _, mid, _ = st.columns([2, 5, 2])
+        with mid:
+            fire_icon(150)
         # plot_date_heatmap()
         # _, mid, _ = st.columns([1, 5, 1])
         # with mid:
@@ -248,11 +252,7 @@ def plot_heatmap(df):
 
 
 def plot_line(df, geo, date) -> Line:
-    left, center, _ = st.columns([1, 5, 1])
-    with left:
-        st.selectbox("Year", range(2030, 2037))
-    with center:
-        plot_date_heatmap()
+    st.header(f"Temperature Overview")
     st.subheader(f"Temperature at {geo[0], geo[1]}")
     left, right = st.columns([1, 4], gap="small")
     temp_today = int(df.loc[df["date"] == date, "temperature"].iloc[0])
@@ -331,6 +331,13 @@ def plot_line(df, geo, date) -> Line:
                 ),
             )
         )
+    st.subheader("Mean temperature per year")
+    left, center, _ = st.columns([1, 5, 1])
+    with left:
+        year = st.selectbox("Year", range(2030, 2037))
+    with center:
+        # st.write(df.date.dt.year)
+        plot_date_heatmap(df[pd.to_datetime(df["date"]).dt.year == year])
 
 
 def plot_gauge(temp_value: int):
@@ -400,22 +407,29 @@ def plot_gauge(temp_value: int):
     }
 
 
-def plot_date_heatmap():
-    begin = datetime.date(2017, 1, 1)
-    end = datetime.date(2017, 12, 31)
+def plot_date_heatmap(df):
+    begin = df["date"].min()
+    end = df["date"].max()
     data = [
-        [str(begin + datetime.timedelta(days=i)), random.randint(1000, 25000)]
+        [
+            str(begin + datetime.timedelta(days=i)),
+            int(df.groupby("date").agg({"temperature": np.mean}).values[i]),
+        ]
         for i in range((end - begin).days + 1)
     ]
 
     c = (
         Calendar()
-        .add("", data, calendar_opts=opts.CalendarOpts(range_="2017"))
+        .add(
+            "",
+            data,
+            calendar_opts=opts.CalendarOpts(range_=begin.year),
+        )
         .set_global_opts(
             title_opts=opts.TitleOpts(is_show=False),
             visualmap_opts=opts.VisualMapOpts(
-                max_=20000,
-                min_=500,
+                max_=110,
+                min_=-10,
                 orient="horizontal",
                 is_piecewise=False,
                 pos_bottom="-6",
