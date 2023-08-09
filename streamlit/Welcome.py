@@ -4,7 +4,7 @@ import time
 
 import numpy as np
 import pandas as pd
-import plotly.express as px
+
 import psycopg2
 from psycopg2 import OperationalError
 from psycopg2.extensions import connection
