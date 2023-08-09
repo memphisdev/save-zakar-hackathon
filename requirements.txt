@@ -40,4 +40,4 @@ dbt-postgres
 streamlit
 
 # Current package
--e .
+# -e .
