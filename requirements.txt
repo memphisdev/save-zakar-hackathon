@@ -35,9 +35,10 @@ seaborn
 nltk
 statsmodels
 supabase
+psycopg2-binary
 psycopg2
 dbt-postgres
 streamlit
 
 # Current package
-# -e .
+-e .
