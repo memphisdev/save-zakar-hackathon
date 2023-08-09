@@ -36,7 +36,7 @@ nltk
 statsmodels
 supabase
 psycopg2-binary
-psycopg2
+# psycopg2
 dbt-postgres
 streamlit
 
