@@ -5,4 +5,4 @@ dependencies:
   - psycopg2
   - pip
   - pip:
-    - -r requirements.txt
+    - -r pip-requirements.txt
