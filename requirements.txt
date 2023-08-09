@@ -18,3 +18,10 @@ referencing==0.29.1
 rpds-py==0.8.10
 sniffio==1.3.0
 tqdm==4.65.0
+streamlit
+scikit-learn
+scipy
+matplotlib
+seaborn
+plotly
+supabase
